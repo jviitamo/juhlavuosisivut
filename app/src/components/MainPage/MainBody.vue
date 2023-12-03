@@ -4,11 +4,11 @@
   <div class="main-body-container">
     <h1 class="main-heading">ATHENE 25</h1>
     <CardComponent
-    text="Tervetuloa mukaan juhlimaan 25-vuotista Informaatioverkostojen kilta Athenea!"
-    imageName="ruukku_logo.svg"
-    order="textFirst"
-    textSize="30px"
-    isBold="true"
+      text="Tervetuloa mukaan juhlimaan 25-vuotista Informaatioverkostojen kilta Athenea!"
+      imageName="ruukku_logo.svg"
+      order="textFirst"
+      textSize="30px"
+      :is-bold="true"
     />
     <CardComponent
       text="Vuoden aikana kiltalaiset pääsevät tutustumaan tarkemmin Athenen historiaan sekä osallistumaan historiallisiin kiltatapahtumiin."
@@ -25,8 +25,8 @@
     imageName="mies_paa.svg"
     order="imageFirst"
     textSize="30px"
-    isBold="true"
-  />
+    :is-bold="true"
+    />
     
   </div>
 </template>
