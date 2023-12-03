@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MyNavbar />
+  <MainBody />
+  <MyFooter />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyNavbar from './components/MyNavbar.vue'
+import MyFooter from './components/MyFooter.vue'
+import MainBody from '@/components/MainPage/MainBody.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MyNavbar,
+    MyFooter,
+    MainBody
   }
 }
 </script>
@@ -22,5 +27,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+@font-face {
+  font-family: 'Magra';
+  src: url('@/assets/fonts/Magra-Regular.ttf');
 }
 </style>
