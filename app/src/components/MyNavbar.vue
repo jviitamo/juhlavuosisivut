@@ -10,8 +10,8 @@
 
       <div class="navbar-menu">
         <div class="navbar-desktop">
-          <a class="navbar-item" href="#">Etusivu</a>
-          <a class="navbar-item" href="#">Tapahtumat</a>
+          <router-link to="/" class="navbar-item">Etusivu</router-link>
+          <router-link to="/events" class="navbar-item">Tapahtumat</router-link>
           <a class="navbar-item" href="#">Kiltalaisille</a>
           <a class="navbar-item" href="#">Yhteystiedot</a>
         </div>

@@ -1,20 +1,18 @@
 <template>
   <MyNavbar />
-  <MainBody />
+  <router-view />
   <MyFooter />
 </template>
 
 <script>
 import MyNavbar from './components/MyNavbar.vue'
 import MyFooter from './components/MyFooter.vue'
-import MainBody from '@/components/MainPage/MainBody.vue';
 
 export default {
   name: 'App',
   components: {
     MyNavbar,
-    MyFooter,
-    MainBody
+    MyFooter
   }
 }
 </script>
