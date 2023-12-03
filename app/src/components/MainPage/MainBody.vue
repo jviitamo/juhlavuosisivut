@@ -2,7 +2,7 @@
 
 <template>
   <div class="main-body-container">
-    <h1 class="main-heading">Athene 25</h1>
+    <h1 class="main-heading">ATHENE 25</h1>
     <CardComponent
     text="Tervetuloa mukaan juhlimaan 25-vuotista Informaatioverkostojen kilta Athenea!"
     imageName="ruukku_logo.svg"
