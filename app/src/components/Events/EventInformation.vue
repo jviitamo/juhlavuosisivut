@@ -24,7 +24,7 @@
           </div>
         </div>
         <p>{{ information }}</p>
-        <div class="link">Ilmonasiinaan</div>
+        <a @click.stop class="link" :href="link" target="_blank">Ilmomasiinaan</a>
       </div>
     </div>
   </template>
@@ -56,6 +56,10 @@
       imageName: {
         type: String,
         default: '', // Image name from the assets folder
+      },
+      link: {
+        type: String,
+        default: 'https://athene.fi/ilmo', // Image name from the assets folder
       }
     },
     computed: {
@@ -152,6 +156,12 @@
     padding: 10px;
     text-align: center;
     border-radius: 5px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .link:hover {
+    text-decoration: underline;
   }
 
   .info-box-details-element {

@@ -18,6 +18,7 @@
             date="2.1.2024"
             time="15.00-20.00"
             imageName="pollo.svg"
+            link="https://athene.fi/ilmo/event/407"
           />     
           <h2>{{ $t('events_header_3') }}</h2>   
         <EventInformation
