@@ -100,78 +100,78 @@
 .arrow-down {
   border-top: 10px solid black;
 }
-  .clickable-text {
-    cursor: pointer;
-    margin: 100px auto;
-  }
+.clickable-text {
+  cursor: pointer;
+  margin: 100px auto;
+}
 
-  .image-content {
-    padding: 30px;
-    margin: auto;
-  }
-  .card-image {
-    max-width: 100%;
-    max-height: 300px; /* Set a reasonable max height for the image */
-  }
+.image-content {
+  padding: 30px;
+  margin: auto;
+}
+.card-image {
+  max-width: 100%;
+  max-height: 300px; /* Set a reasonable max height for the image */
+}
 
-  .first-information-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 5px;
-    border-bottom: 1px solid black;
-  }
+.first-information-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  border-bottom: 1px solid black;
+}
 
-  .first-information-container > div {
-    margin-bottom: 10px;
-  }
+.first-information-container > div {
+  margin-bottom: 10px;
+}
+
+.underlined {
+  text-decoration: underline;
+}
   
-  .underlined {
-    text-decoration: underline;
-  }
-  
-  .info-box {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
 
-  .info-box > p {
-    text-align: center;
-  }
+.info-box > p {
+  text-align: center;
+}
 
-  .info-box-details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-  }
+.info-box-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 10px;
+}
 
-  .link {
-    width: 30%;
-    margin: auto;
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    color: inherit;
-    text-decoration: none;
-  }
+.link {
+  margin: auto;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: inherit;
+  text-decoration: none;
+}
 
-  .link:hover {
-    text-decoration: underline;
-  }
+.link:hover {
+  text-decoration: underline;
+}
 
-  .info-box-details-element {
-    display: flex;
-    align-items: center;
-  }
+.info-box-details-element {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
 
-  .card-icon {
-    padding: 0 20px;
-  }
+.card-icon {
+  padding: 0 20px;
+}
 
 
   </style>
