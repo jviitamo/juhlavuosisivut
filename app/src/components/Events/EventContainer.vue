@@ -67,7 +67,7 @@
 .main-body-container {
     display: flex;
     flex-direction: column;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     margin: 0 auto;
 }
 
@@ -79,10 +79,16 @@
     width: 100%;
 }
 
+.event-header  > img {
+    height: 300px;
+}
+
 .main-heading {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0 20px;
+    max-width: 50%;
 }
 
 .main-heading > h1 {
@@ -108,7 +114,6 @@
 
     .event-header  > img {
         height: 150px;
-        margin: 0 -30px;
     }
 
     .main-heading > h1 {
