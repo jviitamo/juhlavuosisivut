@@ -15,10 +15,10 @@
       
       <div class="navbar-menu">
         <div class="navbar-desktop">
-          <router-link to="/" class="navbar-item" :style="[ currentRoute('/') ? 'font-weight: bold' : '']">{{ $t('front_page') }}</router-link>
-          <router-link to="/events" class="navbar-item" :style="[ currentRoute('/events') ? 'font-weight: bold' : '']">{{ $t('events') }}</router-link>
-          <router-link class="navbar-item" to="/guild" :style="[ currentRoute('/guild') ? 'font-weight: bold' : '']">{{ $t('for_guild') }}</router-link>
-          <router-link class="navbar-item" to="/contact" :style="[ currentRoute('/contact') ? 'font-weight: bold' : '']">{{ $t('contact_information') }}</router-link>
+          <router-link to="/" class="navbar-item" :style="currentRoute('/')">{{ $t('front_page') }}</router-link>
+          <router-link to="/events" class="navbar-item" :style="currentRoute('/events')">{{ $t('events') }}</router-link>
+          <router-link class="navbar-item" to="/guild" :style="currentRoute('/guild')">{{ $t('for_guild') }}</router-link>
+          <router-link class="navbar-item" to="/contact" :style="currentRoute('/contact')">{{ $t('contact_information') }}</router-link>
         </div>
 
         <!-- Mobile menu button -->
@@ -30,10 +30,10 @@
 
         <!-- Mobile menu content -->
         <div class="navbar-mobile" v-if="isMobileMenuOpen">
-          <router-link @click="toggleMobileMenu" to="/" class="navbar-item" :style="[ currentRoute('/') ? 'font-weight: bold' : '']">{{ $t('front_page') }}</router-link>
-          <router-link @click="toggleMobileMenu" to="/events" class="navbar-item" :style="[ currentRoute('/events') ? 'font-weight: bold' : '']">{{ $t('events') }}</router-link>
-          <router-link @click="toggleMobileMenu" class="navbar-item" to="/guild" :style="[ currentRoute('/guild') ? 'font-weight: bold' : '']">{{ $t('for_guild') }}</router-link>
-          <router-link @click="toggleMobileMenu" class="navbar-item" to="/contact" :style="[ currentRoute('/contact') ? 'font-weight: bold' : '']">{{ $t('contact_information') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/" class="navbar-item" :style="currentRoute('/')">{{ $t('front_page') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/events" class="navbar-item" :style="currentRoute('/events')">{{ $t('events') }}</router-link>
+          <router-link @click="toggleMobileMenu" class="navbar-item" to="/guild" :style="currentRoute('/guild')">{{ $t('for_guild') }}</router-link>
+          <router-link @click="toggleMobileMenu" class="navbar-item" to="/contact" :style="currentRoute('/contact')">{{ $t('contact_information') }}</router-link>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@ export default {
       this.$i18n.locale = lang;
     },
     currentRoute(route) {
-      return this.$router.currentRoute.value.fullPath === route
+      return this.$router.currentRoute.value.fullPath === route ? 'font-weight: bold' : ''
     }
   },
 };
