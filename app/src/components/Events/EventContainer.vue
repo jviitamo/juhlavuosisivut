@@ -86,7 +86,6 @@
     justify-content: center;
     font-family: 'Magra';
     width: 100%;
-
 }
 
 .main-heading {
@@ -109,6 +108,26 @@
     text-align: left;
     width: 60%;
     margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .event-information-container {
+        width: 90%;
+    }
+
+    .event-header  > img {
+        height: 150px;
+        margin: 0 -30px;
+    }
+
+    .main-heading > h1 {
+        font-size: 1.7rem;
+    }
+    
+    .main-heading > p {
+        font-size: 1rem;
+        font-weight: bold;
+    }
 }
   
 </style>
