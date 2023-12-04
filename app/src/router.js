@@ -12,7 +12,16 @@ const routes = [
     name: 'Events',
     component: () => import('./components/Events/EventContainer.vue'),
   },
-  // Add more routes as needed
+  {
+    path: '/guild',
+    name: 'ForGuild',
+    component: () => import('./components/ForGuild/ForGuild.vue'),
+  },
+  {
+    path: '/contact',
+    name: 'ContactInformation',
+    component: () => import('./components/ContactInformation/ContactInformation.vue'),
+  },
 ];
 
 const router = createRouter({

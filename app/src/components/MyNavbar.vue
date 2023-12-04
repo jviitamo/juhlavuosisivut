@@ -12,13 +12,13 @@
           <img src="@/assets/logo.svg" alt="Logo" />
         </a>
       </div>
-
+      
       <div class="navbar-menu">
         <div class="navbar-desktop">
           <router-link to="/" class="navbar-item">{{ $t('front_page') }}</router-link>
           <router-link to="/events" class="navbar-item">{{ $t('events') }}</router-link>
-          <a class="navbar-item" href="#">{{ $t('for_guild') }}</a>
-          <a class="navbar-item" href="#">{{ $t('contact_information') }}</a>
+          <router-link class="navbar-item" to="/guild">{{ $t('for_guild') }}</router-link>
+          <router-link class="navbar-item" to="/contact">{{ $t('contact_information') }}</router-link>
         </div>
 
         <!-- Mobile menu button -->
