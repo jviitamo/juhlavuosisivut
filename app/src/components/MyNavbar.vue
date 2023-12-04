@@ -113,8 +113,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   z-index: 1000; /* Ensure it's above other content */
 }
 
