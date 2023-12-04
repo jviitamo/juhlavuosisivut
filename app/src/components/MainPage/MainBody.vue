@@ -64,6 +64,7 @@ export default {
     margin-bottom: 1rem; /* Add margin to separate the heading from the CardComponent */
     font-size: 3.5rem;
     font-family: 'Magra';
+    margin-right: auto;
   }
 
 </style>
