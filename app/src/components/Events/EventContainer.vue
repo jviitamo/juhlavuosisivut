@@ -5,8 +5,8 @@
         <div class="event-header">
             <img src="@/assets/right.svg" alt="Logo" />
             <div class="main-heading">
-                <h1>JUHLAVUODEN TAPAHTUMAT</h1>
-                <p>Täältä löydät kaikki juhlavuoden tapahtumat</p>
+                <h1>{{ $t('events_header_1') }}</h1>
+                <p>{{ $t('events_header_2') }}</p>
             </div>
             <img src="@/assets/left.svg" alt="Logo" />
         </div>
@@ -17,7 +17,7 @@
             rightText="End"
             information="This is the additional information."
           />     
-          <h2>Kevään juhlaviikko</h2>   
+          <h2>{{ $t('events_header_3') }}</h2>   
           <EventInformation
             leftText="Start"
             text="8.1 Vuodenavausbrunssi"
@@ -36,7 +36,7 @@
             rightText="End"
             information="This is the additional information."
         />     
-        <h2>Wappuviikko</h2>   
+        <h2>{{ $t('events_header_4') }}</h2>   
         <EventInformation
         leftText="Start"
         text="8.1 Vuodenavausbrunssi"

@@ -1,6 +1,11 @@
 
 <template>
   <nav class="navbar">
+    <div class="languageselector">
+      <div @click="switchLanguage('fi')" :style="[this.$i18n.locale  === 'fi' ? 'text-decoration: underline' : '']">FI</div>
+      <div>|</div>
+      <div @click="switchLanguage('en')" :style="[this.$i18n.locale  === 'en' ? 'text-decoration: underline' : '']">EN</div>
+    </div>
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="#">
@@ -10,10 +15,10 @@
 
       <div class="navbar-menu">
         <div class="navbar-desktop">
-          <router-link to="/" class="navbar-item">Etusivu</router-link>
-          <router-link to="/events" class="navbar-item">Tapahtumat</router-link>
-          <a class="navbar-item" href="#">Kiltalaisille</a>
-          <a class="navbar-item" href="#">Yhteystiedot</a>
+          <router-link to="/" class="navbar-item">{{ $t('front_page') }}</router-link>
+          <router-link to="/events" class="navbar-item">{{ $t('events') }}</router-link>
+          <a class="navbar-item" href="#">{{ $t('for_guild') }}</a>
+          <a class="navbar-item" href="#">{{ $t('contact_information') }}</a>
         </div>
 
         <!-- Mobile menu button -->
@@ -25,10 +30,10 @@
 
         <!-- Mobile menu content -->
         <div class="navbar-mobile" v-if="isMobileMenuOpen">
-          <router-link @click="toggleMobileMenu" to="/" class="navbar-item">Etusivu</router-link>
-          <router-link @click="toggleMobileMenu" to="/events" class="navbar-item">Tapahtumat</router-link>
-          <a @click="toggleMobileMenu" class="navbar-item" href="#">Kiltalaisille</a>
-          <a @click="toggleMobileMenu" class="navbar-item" href="#">Yhteystiedot</a>
+          <router-link @click="toggleMobileMenu" to="/" class="navbar-item">{{ $t('front_page') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/events" class="navbar-item">{{ $t('events') }}</router-link>
+          <a @click="toggleMobileMenu" class="navbar-item" href="#">{{ $t('for_guild') }}</a>
+          <a @click="toggleMobileMenu" class="navbar-item" href="#">{{ $t('contact_information') }}</a>
         </div>
       </div>
     </div>
@@ -47,6 +52,9 @@ export default {
     toggleMobileMenu() {
       this.isMobileMenuOpen = !this.isMobileMenuOpen;
     },
+    switchLanguage(lang) {
+      this.$i18n.locale = lang;
+    }
   },
 };
 </script>
@@ -64,6 +72,23 @@ export default {
  
 .container {
   width: 100%; /* Make the container full-width */
+}
+
+.languageselector {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  color: black;
+}
+.languageselector > div {
+  cursor: pointer;
+  margin: 0 10px;
+}
+.languageselector > div:hover {
+  opacity: 0.7;
 }
 
 .navbar-brand {
