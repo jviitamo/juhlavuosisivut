@@ -32,8 +32,8 @@
         <div class="navbar-mobile" v-if="isMobileMenuOpen">
           <router-link @click="toggleMobileMenu" to="/" class="navbar-item">{{ $t('front_page') }}</router-link>
           <router-link @click="toggleMobileMenu" to="/events" class="navbar-item">{{ $t('events') }}</router-link>
-          <a @click="toggleMobileMenu" class="navbar-item" href="#">{{ $t('for_guild') }}</a>
-          <a @click="toggleMobileMenu" class="navbar-item" href="#">{{ $t('contact_information') }}</a>
+          <router-link @click="toggleMobileMenu" class="navbar-item" to="/guild">{{ $t('for_guild') }}</router-link>
+          <router-link @click="toggleMobileMenu" class="navbar-item" to="/contact">{{ $t('contact_information') }}</router-link>
         </div>
       </div>
     </div>
