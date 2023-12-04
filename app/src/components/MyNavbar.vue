@@ -93,6 +93,7 @@ export default {
 
 .navbar-brand {
   font-size: 1.5rem;
+  padding-top: 50px;
 }
 
 img {
