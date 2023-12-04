@@ -8,9 +8,9 @@
     </div>
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
+        <router-link to="/" class="navbar-item">
           <img src="@/assets/logo.svg" alt="Logo" />
-        </a>
+        </router-link >
       </div>
       
       <div class="navbar-menu">
