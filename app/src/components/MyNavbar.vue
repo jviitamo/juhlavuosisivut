@@ -15,6 +15,21 @@
           <a class="navbar-item" href="#">Kiltalaisille</a>
           <a class="navbar-item" href="#">Yhteystiedot</a>
         </div>
+
+        <!-- Mobile menu button -->
+        <button class="navbar-toggle" @click="toggleMobileMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Mobile menu content -->
+        <div class="navbar-mobile" v-if="isMobileMenuOpen">
+          <router-link @click="toggleMobileMenu" to="/" class="navbar-item">Etusivu</router-link>
+          <router-link @click="toggleMobileMenu" to="/events" class="navbar-item">Tapahtumat</router-link>
+          <a @click="toggleMobileMenu" class="navbar-item" href="#">Kiltalaisille</a>
+          <a @click="toggleMobileMenu" class="navbar-item" href="#">Yhteystiedot</a>
+        </div>
       </div>
     </div>
   </nav>
@@ -23,6 +38,16 @@
 <script>
 export default {
   name: 'MyNavbar',
+  data() {
+    return {
+      isMobileMenuOpen: false,
+    };
+  },
+  methods: {
+    toggleMobileMenu() {
+      this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    },
+  },
 };
 </script>
 
@@ -36,13 +61,18 @@ export default {
   padding: 1rem;
   color: #000; /* Black text */
 }
-
+ 
 .container {
   width: 100%; /* Make the container full-width */
 }
 
 .navbar-brand {
   font-size: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    max-height: 300px; /* Set a reasonable max height for the image */
 }
 
 .navbar-item {
@@ -53,4 +83,58 @@ export default {
 .navbar-item:hover {
   text-decoration: underline;
 }
+
+/* Mobile menu button styles */
+.navbar-toggle {
+  display: none;
+  background: lightgray;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+}
+
+.navbar-toggle span {
+  display: block;
+  height: 2px;
+  width: 25px;
+  background-color: #000;
+  margin-bottom: 5px;
+}
+
+/* Mobile menu content styles */
+.navbar-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* White background */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  font-size: 3rem;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+
+@media screen and (max-width: 600px) {
+  /* Styles for mobile */
+  .navbar-toggle {
+    display: block; /* Show the mobile menu button */
+  }
+
+  .navbar-desktop {
+    display: none; /* Hide the desktop menu */
+  }
+
+  .navbar-active .navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+
 </style>

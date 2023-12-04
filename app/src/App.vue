@@ -31,4 +31,9 @@ export default {
   font-family: 'Magra';
   src: url('@/assets/fonts/Magra-Regular.ttf');
 }
+
+body { 
+  margin: 0;   /* Remove body margins */
+}
+
 </style>

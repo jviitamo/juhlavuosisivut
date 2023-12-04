@@ -7,7 +7,7 @@
       text="Tervetuloa mukaan juhlimaan 25-vuotista Informaatioverkostojen kilta Athenea!"
       imageName="ruukku_logo.svg"
       order="textFirst"
-      textSize="30px"
+      :textSize="this.chooseTextSize()"
       :is-bold="true"
     />
     <CardComponent
@@ -39,6 +39,11 @@ export default {
   components: {
     CardComponent
   },
+  methods: {
+    chooseTextSize() {
+      return window.innerWidth > 600 ? "2rem" : "1.5rem"
+    }
+  }
 };
 </script>
 
