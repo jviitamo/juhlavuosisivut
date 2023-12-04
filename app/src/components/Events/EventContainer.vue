@@ -11,48 +11,38 @@
             <img src="@/assets/left.svg" alt="Logo" />
         </div>
         <div class="event-information-container">
-            <EventInformation
-            leftText="Start"
+        <EventInformation
             text="8.1 Vuodenavausbrunssi"
-            rightText="End"
             information="This is the additional information."
+            location="Olkkari"
+            date="2.1.2024"
+            time="15.00-20.00"
+            imageName="pollo.svg"
           />     
           <h2>{{ $t('events_header_3') }}</h2>   
-          <EventInformation
-            leftText="Start"
+        <EventInformation
             text="8.1 Vuodenavausbrunssi"
-            rightText="End"
             information="This is the additional information."
         />     
         <EventInformation
-            leftText="Start"
             text="8.1 Vuodenavausbrunssi"
-            rightText="End"
             information="This is the additional information."
         />     
         <EventInformation
-            leftText="Start"
             text="8.1 Vuodenavausbrunssi"
-            rightText="End"
             information="This is the additional information."
         />     
         <h2>{{ $t('events_header_4') }}</h2>   
         <EventInformation
-        leftText="Start"
-        text="8.1 Vuodenavausbrunssi"
-        rightText="End"
+            text="8.1 Vuodenavausbrunssi"
             information="This is the additional information."
         />     
         <EventInformation
-            leftText="Start"
             text="8.1 Vuodenavausbrunssi"
-            rightText="End"
             information="This is the additional information."
         />     
         <EventInformation
-            leftText="Start"
             text="8.1 Vuodenavausbrunssi"
-            rightText="End"
             information="This is the additional information."
         />     
         </div>

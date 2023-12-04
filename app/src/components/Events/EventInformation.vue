@@ -3,10 +3,28 @@
     <div @click="toggleBox" class="clickable-text">
         <div class="first-information-container">
             <div>{{ text }}</div>
-            <div>Avaa</div>
-        </div>
+            <div :class="{ 'arrow-up': isArrowUp, 'arrow-down': !isArrowUp }"></div>
+          </div>
       <div v-if="isBoxVisible" class="info-box">
+        <div class="image-content" v-if="imageName">
+          <img :src="imageUrl" alt="Image" class="card-image" />
+        </div>
+        <div class="info-box-details">
+          <div class="info-box-details-element">
+            <img src="@/assets/icons/clock.svg" alt="Image" class="card-icon" />
+            {{ date }}
+          </div>
+          <div class="info-box-details-element">
+            <img src="@/assets/icons/time.svg" alt="Image" class="card-icon" />
+            {{ time }}
+          </div>
+          <div class="info-box-details-element">
+            <img src="@/assets/icons/location.svg" alt="Image" class="card-icon" />
+            {{ location }}
+          </div>
+        </div>
         <p>{{ information }}</p>
+        <div class="link">Ilmonasiinaan</div>
       </div>
     </div>
   </template>
@@ -21,8 +39,29 @@
       },
       information: {
         type: String,
-        required: true,
+        default: 'More info coming soon',
       },
+      date: {
+        type: String,
+        default: 'TBA',
+      },
+      time: {
+        type: String,
+        default: 'TBA',
+      },
+      location: {
+        type: String,
+        default: 'TBA',
+      },
+      imageName: {
+        type: String,
+        default: '', // Image name from the assets folder
+      }
+    },
+    computed: {
+      imageUrl() {
+        return require(`@/assets/${this.imageName}`);
+      }
     },
     data() {
       return {
@@ -32,17 +71,43 @@
     methods: {
       toggleBox() {
         this.isBoxVisible = !this.isBoxVisible;
-      },
+        this.isArrowUp = !this.isArrowUp;
+      }
     },
   };
   </script>
   
   <style scoped>
   /* Add your custom styles here */
+
+.arrow-up,
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  cursor: pointer;
+}
+
+.arrow-up {
+  border-bottom: 10px solid black;
+}
+
+.arrow-down {
+  border-top: 10px solid black;
+}
   .clickable-text {
     cursor: pointer;
     margin: 100px auto;
-    border-bottom: 1px solid black;
+  }
+
+  .image-content {
+    padding: 30px;
+    margin: auto;
+  }
+  .card-image {
+    max-width: 100%;
+    max-height: 300px; /* Set a reasonable max height for the image */
   }
 
   .first-information-container {
@@ -50,6 +115,11 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 5px;
+    border-bottom: 1px solid black;
+  }
+
+  .first-information-container > div {
+    margin-bottom: 10px;
   }
   
   .underlined {
@@ -57,8 +127,41 @@
   }
   
   .info-box {
-    background-color: #f0f0f0;
     padding: 10px;
-    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
   }
+
+  .info-box > p {
+    text-align: center;
+  }
+
+  .info-box-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .link {
+    width: 30%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .info-box-details-element {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-icon {
+    padding: 0 20px;
+  }
+
+
   </style>
