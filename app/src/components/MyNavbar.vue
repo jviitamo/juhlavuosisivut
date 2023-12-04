@@ -8,7 +8,7 @@
     </div>
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" href="/">
           <img src="@/assets/logo.svg" alt="Logo" />
         </a>
       </div>
