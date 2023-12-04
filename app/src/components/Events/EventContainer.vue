@@ -12,40 +12,63 @@
         </div>
         <div class="event-information-container">
         <EventInformation
-            text="8.1 Vuodenavausbrunssi"
+            text="Tapahtuma 0"
             information="This is the additional information."
             location="Olkkari"
-            date="2.1.2024"
+            date="2.1."
             time="15.00-20.00"
             imageName="pollo.svg"
             link="https://athene.fi/ilmo/event/407"
           />     
           <h2>{{ $t('events_header_3') }}</h2>   
         <EventInformation
-            text="8.1 Vuodenavausbrunssi"
+            text="Tapahtuma 1"
             information="This is the additional information."
+            imageName="pollo.svg"
         />     
         <EventInformation
-            text="8.1 Vuodenavausbrunssi"
+            text="Tapahtuma 2"
             information="This is the additional information."
+            imageName="pollo.svg"
         />     
         <EventInformation
-            text="8.1 Vuodenavausbrunssi"
+            text="Tapahtuma 3"
+            date="15.3."
             information="This is the additional information."
+            imageName="pollo.svg"
+        />     
+        <EventInformation
+            text="Tapahtuma 4"
+            information="This is the additional information."
+            imageName="pollo.svg"
+        />     
+        <EventInformation
+            text="Tapahtuma 5"
+            date="1.5."
+            information="This is the additional information."
+            imageName="pollo.svg"
+        />     
+        <EventInformation
+            text="Tapahtuma 6"
+            information="This is the additional information."
+            imageName="pollo.svg"
         />     
         <h2>{{ $t('events_header_4') }}</h2>   
         <EventInformation
-            text="8.1 Vuodenavausbrunssi"
+            text="Tapahtuma 7"
             information="This is the additional information."
+            imageName="pollo.svg"
+        /> 
+        <EventInformation
+            text="Tapahtuma 8"
+            information="This is the additional information."
+            imageName="pollo.svg"
         />     
         <EventInformation
-            text="8.1 Vuodenavausbrunssi"
+            text="Tapahtuma 9"
             information="This is the additional information."
-        />     
-        <EventInformation
-            text="8.1 Vuodenavausbrunssi"
-            information="This is the additional information."
-        />     
+            imageName="pollo.svg"
+        />         
         </div>
     </div>
   </template>

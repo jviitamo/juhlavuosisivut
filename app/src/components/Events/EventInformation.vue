@@ -2,7 +2,7 @@
 <template>
     <div @click="toggleBox" class="clickable-text">
         <div class="first-information-container">
-            <div>{{ text }}</div>
+            <div>{{ date }} {{ text }}</div>
             <div :class="{ 'arrow-up': isArrowUp, 'arrow-down': !isArrowUp }"></div>
           </div>
       <div v-if="isBoxVisible" class="info-box">
@@ -11,11 +11,11 @@
         </div>
         <div class="info-box-details">
           <div class="info-box-details-element">
-            <img src="@/assets/icons/clock.svg" alt="Image" class="card-icon" />
+            <img src="@/assets/icons/time.svg" alt="Image" class="card-icon" />
             {{ date }}
           </div>
           <div class="info-box-details-element">
-            <img src="@/assets/icons/time.svg" alt="Image" class="card-icon" />
+            <img src="@/assets/icons/clock.svg" alt="Image" class="card-icon" />
             {{ time }}
           </div>
           <div class="info-box-details-element">
