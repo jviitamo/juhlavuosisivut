@@ -53,7 +53,6 @@ export default {
 .main-body-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the start (left) */
     justify-content: center;
     padding: 4rem 2rem;
     width: 80%;

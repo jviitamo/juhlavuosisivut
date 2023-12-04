@@ -56,8 +56,7 @@
     justify-content: space-between;
   }
   
-  .text-content,
-  .image-content {
+  .text-content, .image-content  {
     flex: 1;
     text-align: center;
   }
