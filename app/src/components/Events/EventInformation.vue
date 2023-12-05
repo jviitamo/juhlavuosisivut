@@ -24,7 +24,7 @@
           </div>
         </div>
         <p>{{ information }}</p>
-        <a @click.stop class="link" :href="link" target="_blank">Ilmomasiinaan</a>
+        <a @click.stop v-if="link" class="link" :href="link" target="_blank">Ilmomasiinaan</a>
       </div>
     </div>
   </template>
@@ -59,7 +59,7 @@
       },
       link: {
         type: String,
-        default: 'https://athene.fi/ilmo', // Image name from the assets folder
+        default: '', // Image name from the assets folder
       }
     },
     computed: {
