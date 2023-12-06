@@ -35,7 +35,7 @@
           <router-link @click="toggleMobileMenu" to="/" class="navbar-item" :style="currentRoute('/')">{{ $t('front_page_header') }}</router-link>
           <router-link @click="toggleMobileMenu" to="/events" class="navbar-item" :style="currentRoute('/events')">{{ $t('events_header') }}</router-link>
           <router-link @click="toggleMobileMenu" to="/seminar" class="navbar-item" :style="currentRoute('/seminar')">{{ $t('seminar_header') }}</router-link>
-          <router-link @click="toggleMobileMenu" to="/infoahky" class="navbar-item" :style="currentRoute('/annual_ball')">{{ $t('annual_ball_header') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/infoahky" class="navbar-item" :style="currentRoute('/infoahky')">{{ $t('annual_ball_header') }}</router-link>
           <router-link @click="toggleMobileMenu" to="/guild" class="navbar-item" :style="currentRoute('/guild')">{{ $t('for_guild_header') }}</router-link>
           <router-link @click="toggleMobileMenu" to="/contact" class="navbar-item" :style="currentRoute('/contact')">{{ $t('contact_information_header') }}</router-link>
         </div>
