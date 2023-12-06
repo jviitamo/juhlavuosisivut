@@ -115,7 +115,7 @@ img {
 }
 
 .navbar-item:hover {
-  text-decoration: underline;
+  opacity: 0.7;
 }
 
 /* Mobile menu button styles */
