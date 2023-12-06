@@ -22,6 +22,16 @@ const routes = [
     name: 'ContactInformation',
     component: () => import('./components/ContactInformation/ContactInformation.vue'),
   },
+  {
+    path: '/infoahky',
+    name: 'Annual ball',
+    component: () => import('./components/AnnualBall/AnnualBall.vue'),
+  },
+  {
+    path: '/seminar',
+    name: 'Seminar',
+    component: () => import('./components/Seminar/SeminarPage.vue'),
+  },
 ];
 
 const router = createRouter({

@@ -15,10 +15,12 @@
       
       <div class="navbar-menu">
         <div class="navbar-desktop">
-          <router-link to="/" class="navbar-item" :style="currentRoute('/')">{{ $t('front_page') }}</router-link>
-          <router-link to="/events" class="navbar-item" :style="currentRoute('/events')">{{ $t('events') }}</router-link>
-          <router-link class="navbar-item" to="/guild" :style="currentRoute('/guild')">{{ $t('for_guild') }}</router-link>
-          <router-link class="navbar-item" to="/contact" :style="currentRoute('/contact')">{{ $t('contact_information') }}</router-link>
+          <router-link to="/" class="navbar-item" :style="currentRoute('/')">{{ $t('front_page_header') }}</router-link>
+          <router-link to="/events" class="navbar-item" :style="currentRoute('/events')">{{ $t('events_header') }}</router-link>
+          <router-link to="/seminar" class="navbar-item" :style="currentRoute('/seminar')">{{ $t('seminar_header') }}</router-link>
+          <router-link to="/infoahky" class="navbar-item" :style="currentRoute('/infoahky')">{{ $t('annual_ball_header') }}</router-link>
+          <router-link to="/guild" class="navbar-item" :style="currentRoute('/guild')">{{ $t('for_guild_header') }}</router-link>
+          <router-link to="/contact" class="navbar-item" :style="currentRoute('/contact')">{{ $t('contact_information_header') }}</router-link>
         </div>
 
         <!-- Mobile menu button -->
@@ -30,10 +32,12 @@
 
         <!-- Mobile menu content -->
         <div class="navbar-mobile" v-if="isMobileMenuOpen">
-          <router-link @click="toggleMobileMenu" to="/" class="navbar-item" :style="currentRoute('/')">{{ $t('front_page') }}</router-link>
-          <router-link @click="toggleMobileMenu" to="/events" class="navbar-item" :style="currentRoute('/events')">{{ $t('events') }}</router-link>
-          <router-link @click="toggleMobileMenu" class="navbar-item" to="/guild" :style="currentRoute('/guild')">{{ $t('for_guild') }}</router-link>
-          <router-link @click="toggleMobileMenu" class="navbar-item" to="/contact" :style="currentRoute('/contact')">{{ $t('contact_information') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/" class="navbar-item" :style="currentRoute('/')">{{ $t('front_page_header') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/events" class="navbar-item" :style="currentRoute('/events')">{{ $t('events_header') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/seminar" class="navbar-item" :style="currentRoute('/seminar')">{{ $t('seminar_header') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/infoahky" class="navbar-item" :style="currentRoute('/annual_ball')">{{ $t('annual_ball_header') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/guild" class="navbar-item" :style="currentRoute('/guild')">{{ $t('for_guild_header') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/contact" class="navbar-item" :style="currentRoute('/contact')">{{ $t('contact_information_header') }}</router-link>
         </div>
       </div>
     </div>
@@ -107,6 +111,7 @@ img {
 .navbar-item {
   color: inherit;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 .navbar-item:hover {
@@ -146,11 +151,21 @@ img {
   z-index: 1000; /* Ensure it's above other content */
 }
 
+@media screen and (max-width: 900px) {
+  .navbar-item {
+    font-size: 0.7rem;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   /* Styles for mobile */
   .navbar-toggle {
     display: block; /* Show the mobile menu button */
+  }
+
+  .navbar-item {
+    font-size: 2rem;
   }
 
   .navbar-desktop {
