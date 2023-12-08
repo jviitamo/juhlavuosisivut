@@ -10,7 +10,13 @@
   .main-heading {
     margin-left: 0;
     margin-bottom: 1rem; /* Add margin to separate the heading from the CardComponent */
-    font-size: 3.5rem;
+    font-size: 60px;
     font-family: 'Magra';
     margin-right: auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    .main-heading {
+        font-size: 44px;
+    }
   }
