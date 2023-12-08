@@ -21,33 +21,6 @@
   export default {
     name: 'AnnualBall',
     components: {
-    },
-    methods: {
-      chooseTextSize() {
-        return window.innerWidth > 600 ? "2rem" : "1.5rem"
-      }
     }
   };
   </script>
-  
-  <style scoped>
-  /* Add your custom styles for MainBody here */
-  
-  .main-body-container {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start; /* Align items to the start (left) */
-      justify-content: center;
-      padding: 4rem 2rem;
-      width: 80%;
-      margin: 0 auto;
-    }
-    
-    .main-heading {
-      margin-left: 0;
-      margin-bottom: 1rem; /* Add margin to separate the heading from the CardComponent */
-      font-size: 3.5rem;
-      font-family: 'Magra';
-    }
-  
-  </style>

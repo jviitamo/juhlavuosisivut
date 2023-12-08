@@ -1,10 +1,10 @@
 <!-- MainBody.vue -->
 
 <template>
-    <div class="main-body-container">
+    <div class="main-body-container-events">
         <div class="event-header">
             <img src="@/assets/right.svg" alt="Logo" />
-            <div class="main-heading">
+            <div class="main-heading-events">
                 <h1>{{ $t('events_header_1') }}</h1>
                 <p>{{ $t('events_header_2') }}</p>
             </div>
@@ -87,9 +87,7 @@
   <style scoped>
   /* Add your custom styles for MainBody here */
   
-.main-body-container {
-    display: flex;
-    flex-direction: column;
+.main-body-container-events {
     padding: 4rem 1rem;
     margin: 0 auto;
 }
@@ -106,7 +104,7 @@
     height: 300px;
 }
 
-.main-heading {
+.main-heading-events {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,11 +112,11 @@
     max-width: 50%;
 }
 
-.main-heading > h1 {
+.main-heading-events > h1 {
     font-size: 3rem;
 }
 
-.main-heading > p {
+.main-heading-events > p {
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -139,11 +137,11 @@
         height: 150px;
     }
 
-    .main-heading > h1 {
+    .main-heading-events > h1 {
         font-size: 1.7rem;
     }
     
-    .main-heading > p {
+    .main-heading-events > p {
         font-size: 1rem;
         font-weight: bold;
     }
