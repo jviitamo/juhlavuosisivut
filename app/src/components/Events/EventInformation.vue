@@ -161,7 +161,7 @@
 }
 
 .link:hover {
-  text-decoration: underline;
+  opacity: 0.7;
 }
 
 .info-box-details-element {

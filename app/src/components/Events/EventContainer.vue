@@ -56,10 +56,10 @@
         EventInformation
     },
     methods: {
-    getEvents(key) {
-      const messages = this.$i18n.messages[this.$i18n.locale] || {};
-      return messages[key] || [];
-    },
+        getEvents(key) {
+        const messages = this.$i18n.messages[this.$i18n.locale] || {};
+        return messages[key] || [];
+        },
   },
   };
   </script>
