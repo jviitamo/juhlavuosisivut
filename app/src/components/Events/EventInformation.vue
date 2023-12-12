@@ -24,7 +24,7 @@
           </div>
         </div>
         <p>{{ information }}</p>
-        <a @click.stop v-if="link" class="link" :href="link" target="_blank">Ilmomasiinaan</a>
+        <a @click.stop v-if="link" class="link" :href="link" target="_blank">{{ $t('event_headers[0].link_button') }}</a>
       </div>
     </div>
   </template>
