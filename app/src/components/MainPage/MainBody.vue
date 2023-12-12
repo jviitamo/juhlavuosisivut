@@ -4,24 +4,24 @@
   <div class="main-body-container">
     <h1 class="main-heading">ATHENE 25</h1>
     <CardComponent
-      :text="$t('main_page_1')"
+      :text="$t('main_page[0].main_page_1')"
       imageName="ruukku_logo.svg"
       order="textFirst"
       :textSize="this.chooseTextSize()"
       :is-bold="true"
     />
     <CardComponent
-      :text="$t('main_page_2')"
+      :text="$t('main_page[0].main_page_2')"
       imageName="nainen_paa.svg"
       order="imageFirst"
     />
     <CardComponent
-      :text="$t('main_page_3')"
+      :text="$t('main_page[0].main_page_3')"
       imageName="pollo.svg"
       order="textFirst"
     />
     <CardComponent
-      :text="$t('main_page_4')"
+      :text="$t('main_page[0].main_page_4')"
       imageName="mies_paa.svg"
       order="imageFirst"
       textSize="30px"

@@ -5,70 +5,44 @@
         <div class="event-header">
             <img src="@/assets/right.svg" alt="Logo" />
             <div class="main-heading-events">
-                <h1>{{ $t('events_header_1') }}</h1>
-                <p>{{ $t('events_header_2') }}</p>
+                <h1>{{ $t('event_headers[0].header_1') }}</h1>
+                <p>{{ $t('event_headers[0].header_2') }}</p>
             </div>
             <img src="@/assets/left.svg" alt="Logo" />
         </div>
         <div class="event-information-container">
         <EventInformation
-            text="Tapahtuma 0"
-            information="This is the additional information."
-            location="Olkkari"
-            date="2.1."
-            time="15.00-20.00"
-            imageName="pollo.svg"
-            link="https://athene.fi/ilmo/event/407"
-          />     
-          <h2>{{ $t('events_header_3') }}</h2>   
-        <EventInformation
-            text="Tapahtuma 1"
-            information="This is the additional information."
-            imageName="pollo.svg"
+            v-for="(message, key) in getEvents('events_0')" :key="key"
+            :text=message.text
+            :information=message.information
+            :location=message.location 
+            :date=message.date
+            :time=message.time
+            :imageName=message.imageName
+            :link=message.link
         />     
+        <h2>{{ $t('event_headers[0].header_3') }}</h2>   
         <EventInformation
-            text="Tapahtuma 2"
-            information="This is the additional information."
-            imageName="pollo.svg"
-        />     
+            v-for="(message, key) in getEvents('events_1')" :key="key"
+            :text=message.text
+            :information=message.information
+            :location=message.location 
+            :date=message.date
+            :time=message.time
+            :imageName=message.imageName
+            :link=message.link
+        />    
+        <h2>{{ $t('event_headers[0].header_4') }}</h2>   
         <EventInformation
-            text="Tapahtuma 3"
-            date="15.3."
-            information="This is the additional information."
-            imageName="pollo.svg"
-        />     
-        <EventInformation
-            text="Tapahtuma 4"
-            information="This is the additional information."
-            imageName="pollo.svg"
-        />     
-        <EventInformation
-            text="Tapahtuma 5"
-            date="1.5."
-            information="This is the additional information."
-            imageName="pollo.svg"
-        />     
-        <EventInformation
-            text="Tapahtuma 6"
-            information="This is the additional information."
-            imageName="pollo.svg"
-        />     
-        <h2>{{ $t('events_header_4') }}</h2>   
-        <EventInformation
-            text="Tapahtuma 7"
-            information="This is the additional information."
-            imageName="pollo.svg"
-        /> 
-        <EventInformation
-            text="Tapahtuma 8"
-            information="This is the additional information."
-            imageName="pollo.svg"
-        />     
-        <EventInformation
-            text="Tapahtuma 9"
-            information="This is the additional information."
-            imageName="pollo.svg"
-        />         
+            v-for="(message, key) in getEvents('events_2')" :key="key"
+            :text=message.text
+            :information=message.information
+            :location=message.location 
+            :date=message.date
+            :time=message.time
+            :imageName=message.imageName
+            :link=message.link
+        />        
         </div>
     </div>
   </template>
@@ -81,6 +55,12 @@
     components: {
         EventInformation
     },
+    methods: {
+    getEvents(key) {
+      const messages = this.$i18n.messages[this.$i18n.locale] || {};
+      return messages[key] || [];
+    },
+  },
   };
   </script>
   

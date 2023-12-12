@@ -70,6 +70,7 @@
     data() {
       return {
         isBoxVisible: false,
+        isArrowUp: false,
       };
     },
     methods: {

@@ -15,12 +15,12 @@
       
       <div class="navbar-menu">
         <div class="navbar-desktop">
-          <router-link to="/" class="navbar-item" :style="currentRoute('/')">{{ $t('front_page_header') }}</router-link>
-          <router-link to="/events" class="navbar-item" :style="currentRoute('/events')">{{ $t('events_header') }}</router-link>
-          <router-link to="/seminar" class="navbar-item" :style="currentRoute('/seminar')">{{ $t('seminar_header') }}</router-link>
-          <router-link to="/infoahky" class="navbar-item" :style="currentRoute('/infoahky')">{{ $t('annual_ball_header') }}</router-link>
-          <router-link to="/guild" class="navbar-item" :style="currentRoute('/guild')">{{ $t('for_guild_header') }}</router-link>
-          <router-link to="/contact" class="navbar-item" :style="currentRoute('/contact')">{{ $t('contact_information_header') }}</router-link>
+          <router-link to="/" class="navbar-item" :style="currentRoute('/')">{{ $t('nav_bar[0].front_page_header') }}</router-link>
+          <router-link to="/events" class="navbar-item" :style="currentRoute('/events')">{{ $t('nav_bar[0].events_header') }}</router-link>
+          <router-link to="/seminar" class="navbar-item" :style="currentRoute('/seminar')">{{ $t('nav_bar[0].seminar_header') }}</router-link>
+          <router-link to="/infoahky" class="navbar-item" :style="currentRoute('/infoahky')">{{ $t('nav_bar[0].annual_ball_header') }}</router-link>
+          <router-link to="/guild" class="navbar-item" :style="currentRoute('/guild')">{{ $t('nav_bar[0].for_guild_header') }}</router-link>
+          <router-link to="/contact" class="navbar-item" :style="currentRoute('/contact')">{{ $t('nav_bar[0].contact_information_header') }}</router-link>
         </div>
 
         <!-- Mobile menu button -->
@@ -32,12 +32,12 @@
 
         <!-- Mobile menu content -->
         <div class="navbar-mobile" v-if="isMobileMenuOpen">
-          <router-link @click="toggleMobileMenu" to="/" class="navbar-item" :style="currentRoute('/')">{{ $t('front_page_header') }}</router-link>
-          <router-link @click="toggleMobileMenu" to="/events" class="navbar-item" :style="currentRoute('/events')">{{ $t('events_header') }}</router-link>
-          <router-link @click="toggleMobileMenu" to="/seminar" class="navbar-item" :style="currentRoute('/seminar')">{{ $t('seminar_header') }}</router-link>
-          <router-link @click="toggleMobileMenu" to="/infoahky" class="navbar-item" :style="currentRoute('/infoahky')">{{ $t('annual_ball_header') }}</router-link>
-          <router-link @click="toggleMobileMenu" to="/guild" class="navbar-item" :style="currentRoute('/guild')">{{ $t('for_guild_header') }}</router-link>
-          <router-link @click="toggleMobileMenu" to="/contact" class="navbar-item" :style="currentRoute('/contact')">{{ $t('contact_information_header') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/" class="navbar-item" :style="currentRoute('/')">{{ $t('nav_bar[0].front_page_header') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/events" class="navbar-item" :style="currentRoute('/events')">{{ $t('nav_bar[0].events_header') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/seminar" class="navbar-item" :style="currentRoute('/seminar')">{{ $t('nav_bar[0].seminar_header') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/infoahky" class="navbar-item" :style="currentRoute('/infoahky')">{{ $t('nav_bar[0].annual_ball_header') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/guild" class="navbar-item" :style="currentRoute('/guild')">{{ $t('nav_bar[0].for_guild_header') }}</router-link>
+          <router-link @click="toggleMobileMenu" to="/contact" class="navbar-item" :style="currentRoute('/contact')">{{ $t('nav_bar[0].contact_information_header') }}</router-link>
         </div>
       </div>
     </div>

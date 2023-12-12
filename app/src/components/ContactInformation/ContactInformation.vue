@@ -2,7 +2,7 @@
 
 <template>
     <div class="main-body-container">
-      <h1 class="main-heading">{{ $t('contact_information_header') }}</h1>
+      <h1 class="main-heading">{{ $t('nav_bar[0].contact_information_header') }}</h1>
         <div class="box-container">
           <BoxComponent name="Jane Doe" email="jane@example.com" photoUrl="URL_TO_PHOTO" />
           <BoxComponent name="Jane Doe" email="jane@example.com" photoUrl="URL_TO_PHOTO" />
