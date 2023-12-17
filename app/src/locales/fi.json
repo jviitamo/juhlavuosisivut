@@ -5,7 +5,8 @@
       "main_page_2": "Vuoden aikana kiltalaiset pääsevät tutustumaan tarkemmin Athenen historiaan sekä osallistumaan historiallisiin kiltatapahtumiin.",
       "main_page_3": "Juhlavuoden kunniaksi järjestetään paljon tapahtumia ja aktiviteetteja sekä kiltalaisille että koko Otaniemelle. Juhlavuosi huipentuu marraskuussa/joulukuussa Infoähkyyn!",
       "main_page_4": "Tule mukaan",
-      "main_page_5": "tekemään juhlavuotta!"
+      "main_page_5": "tekemään juhlavuotta!",
+      "main_page_6": "TULE MUKAAN TEKEMÄÄN JUHLAVUOTTA"
     }
   ],
   "nav_bar": [
@@ -94,6 +95,13 @@
       "time": "15.00-20.00",
       "imageName": "pollo.svg",
       "link": "https://athene.fi/ilmo/event/407"
+    }
+  ],
+  "for_guild": [
+    {
+      "text_0": "Kaikki athenelaiset ovat tervetulleita osallistumaan juhlavuoden järjestämiseen. Jos haluat järjestää tapahtuman osana juhlavuotta,",
+      "text_1": "ota yhteyttä",
+      "text_2": " juhlavuositoimikuntaan sopiaksesi asiasta. Tapahtumien järjestämiseen saa tukea sekä toimikunnalta että killalta, joten olethan rohkeasti yhteydessä ja osallistu juhlavuoden toteuttamiseen!"
     }
   ]
 }

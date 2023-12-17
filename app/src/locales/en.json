@@ -5,7 +5,8 @@
       "main_page_2": "Throughout the year, guild members will have the opportunity to delve into Athen's history and participate in historical guild events.",
       "main_page_3": "In honor of the anniversary, numerous events and activities will be organized for both guild members and the entire Otaniemi community. The celebratory year culminates in November/December with Infoähky!",
       "main_page_4": "Join us",
-      "main_page_5": "in making this anniversary year memorable!"
+      "main_page_5": "in making this anniversary year memorable!",
+      "main_page_6": "JOIN US IN MAKING THIS ANNIVERSARY YEAR"
     }
   ],
   "nav_bar": [
@@ -94,6 +95,13 @@
       "time": "15.00-20.00",
       "imageName": "pollo.svg",
       "link": "https://athene.fi/ilmo/event/407"
+    }
+  ],
+  "for_guild": [
+    {
+      "text_0": "All guild members are welcome to join us in making this anniversary year memorable. If you want to organize an event as a part of the anniversary year,",
+      "text_1": "contact the anniversary year committee",
+      "text_2": "to arrange it. Both the committee and guild will support you in organizing events, so please contact us and participate in making this year amazing!"
     }
   ]
 }
