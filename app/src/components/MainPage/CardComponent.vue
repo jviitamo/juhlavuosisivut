@@ -2,8 +2,8 @@
 
 <template>
     <div :style="{ flexDirection: flexDirection }" class="card-container">
-      <div class="text-content" :style="{ fontSize: textSize, fontWeight: isBold ? 'bold' : 'normal' }">
-        <p>{{ text }}</p>
+      <div class="text-content">
+        <slot></slot>
       </div>
       <div class="image-content">
         <img :src="imageUrl" alt="Image" class="card-image" />

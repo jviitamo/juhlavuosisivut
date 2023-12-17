@@ -8,7 +8,7 @@
     </div>
     <div class="container">
       <div class="navbar-brand">
-        <router-link to="/" class="navbar-item">
+        <router-link to="/" class="link-underline-prevent-default">
           <img src="@/assets/logo.svg" alt="Logo" />
         </router-link >
       </div>
