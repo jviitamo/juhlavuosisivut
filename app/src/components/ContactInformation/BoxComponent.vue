@@ -2,7 +2,7 @@
 
 <template>
     <div class="box">
-      <div class="photo"></div>
+      <img :src="imageUrl" class="photo" alt="Image" />
       <div class="info">
         <p class="name">{{ name }}</p>
         <p class="title">{{ title }}</p>
@@ -19,8 +19,16 @@
       email: String,
       title: String,
       telegram: String,
-      photoUrl: String, // You can pass the URL for the round photo as a prop
+      photoUrl: {
+        type: String, // You can pass the URL for the round photo as a prop
+        default: "ellipse.svg"
+      }
     },
+    computed: {
+      imageUrl() {
+        return require(`@/assets/people/${this.photoUrl}`);
+      },
+    }
   };
   </script>
   
