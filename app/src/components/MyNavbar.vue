@@ -1,7 +1,13 @@
 
 <template>
   <nav class="navbar">
-    <div class="languageselector">
+    <div class="languageselector desktop">
+      <div @click="switchLanguage('fi')" :style="[this.$i18n.locale  === 'fi' ? 'text-decoration: underline' : '']">FI</div>
+      <div>|</div>
+      <div @click="switchLanguage('en')" :style="[this.$i18n.locale  === 'en' ? 'text-decoration: underline' : '']">EN</div>
+    </div>
+
+    <div class="languageselector mobile" v-if="isMobileMenuOpen">
       <div @click="switchLanguage('fi')" :style="[this.$i18n.locale  === 'fi' ? 'text-decoration: underline' : '']">FI</div>
       <div>|</div>
       <div @click="switchLanguage('en')" :style="[this.$i18n.locale  === 'en' ? 'text-decoration: underline' : '']">EN</div>
@@ -123,6 +129,11 @@ export default {
   opacity: 0.7;
 }
 
+.mobile {
+  font-size: 30px;
+  z-index: 2; /* Ensure it's above other content */
+}
+
 .navbar-brand {
   font-size: 1.5rem;
   padding-top: 50px;
@@ -171,9 +182,9 @@ img {
   background-color: #fff; /* White background */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  font-size: 2rem;
-  z-index: 1000; /* Ensure it's above other content */
+  justify-content: space-evenly;
+  z-index: 1; /* Ensure it's above other content */
+  padding: 20px 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -193,15 +204,10 @@ img {
     font-size: 2rem;
   }
 
-  .navbar-desktop {
+  .navbar-desktop, .desktop {
     display: none; /* Hide the desktop menu */
   }
 
-  .navbar-active .navbar-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
 }
 
 
