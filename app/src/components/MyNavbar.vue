@@ -49,20 +49,14 @@ export default {
   data() {
     return {
       isMobileMenuOpen: false,
-      scrollPosition: 0,
-      scaleTrigger1: 300, // Scroll position for the first size change
-      scaleTrigger2: 600, // Scroll position for the second size change    
+      scrollPosition: 0,  
     };
   }, 
   computed: {
     computedNavbarHeight() {
-      if (this.scrollPosition <= this.scaleTrigger1) {
-        return 130; // Default height
-      } else if (this.scrollPosition <= this.scaleTrigger2 ) {
-        return 90; // Adjusted height
-      } else {
-        return 60; // Adjusted height
-      }
+      const ratio = (600 - this.scrollPosition) / 600
+      const size =  150 * ratio
+      return size > 50 ? size : 50
     },
   },
   methods: {
@@ -131,12 +125,11 @@ export default {
 
 .navbar-brand {
   font-size: 1.5rem;
-  padding-top: 30px;
+  padding-top: 10px;
   background-color: white;
 }
 
 img {
-    max-height: 150px; /* Set a reasonable max height for the image */
     transition: max-height 0.3s ease-out;
   }
 
@@ -203,12 +196,6 @@ img {
   .navbar-desktop, .desktop {
     display: none; /* Hide the desktop menu */
   }
-
-  .navbar-brand {
-    padding-top: 10px;
-  }
-  
-
 }
 
 
