@@ -130,7 +130,6 @@ export default {
 }
 
 .mobile {
-  font-size: 30px;
   z-index: 2; /* Ensure it's above other content */
 }
 
@@ -201,7 +200,7 @@ img {
   }
 
   .navbar-item {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .navbar-desktop, .desktop {
