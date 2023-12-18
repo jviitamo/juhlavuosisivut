@@ -55,7 +55,7 @@ export default {
   computed: {
     computedNavbarHeight() {
       const ratio = (600 - this.scrollPosition) / 600
-      const size =  150 * ratio
+      const size =  130 * ratio
       return size > 50 ? size : 50
     },
   },
