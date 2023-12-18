@@ -28,7 +28,7 @@
 .main-body-container-for-guild {
   width: 80%;
   margin: 100px auto;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .for-guild-header {
@@ -43,7 +43,7 @@
   font-size: 4.5rem;
   font-weight: bold;
   max-width: 90%;
-  margin: 50px auto;
+  margin: auto;
 }
 
 .header-container > img {
