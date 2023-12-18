@@ -6,33 +6,32 @@
       <div>|</div>
       <div @click="switchLanguage('en')" :style="[this.$i18n.locale  === 'en' ? 'text-decoration: underline' : '']">EN</div>
     </div>
-    <div class="container">
-      <div class="navbar-brand">
-        <router-link to="/" class="link-underline-prevent-default">
-          <img src="@/assets/logo.svg" alt="Logo" />
-        </router-link >
+
+    <div class="navbar-brand">
+      <router-link to="/" class="link-underline-prevent-default">
+        <img src="@/assets/logo.svg" alt="Logo" :style="{ maxHeight: `${computedNavbarHeight}px` }" />
+      </router-link >
+    </div>
+    
+    <div class="navbar-menu">
+      <div class="navbar-desktop">
+        <router-link v-for="route in this.$router.getRoutes()" :key="route.name" :to="route.path" class="navbar-item" :style="currentRoute(route.path)">
+          {{ $t(route.props.default.text) }}
+        </router-link>
       </div>
-      
-      <div class="navbar-menu">
-        <div class="navbar-desktop">
-          <router-link v-for="route in this.$router.getRoutes()" :key="route.name" :to="route.path" class="navbar-item" :style="currentRoute(route.path)">
-            {{ $t(route.props.default.text) }}
-          </router-link>
-        </div>
 
-        <!-- Mobile menu button -->
-        <button class="navbar-toggle" @click="toggleMobileMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+      <!-- Mobile menu button -->
+      <button class="navbar-toggle" @click="toggleMobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        <!-- Mobile menu content -->
-        <div class="navbar-mobile" v-if="isMobileMenuOpen">
-          <router-link v-for="route in this.$router.getRoutes()" :key="route.name" @click="toggleMobileMenu" :to="route.path" class="navbar-item" :style="currentRoute(route.path)">
-            {{ $t(route.props.default.text) }}
-          </router-link>
-        </div>
+      <!-- Mobile menu content -->
+      <div class="navbar-mobile" v-if="isMobileMenuOpen">
+        <router-link v-for="route in this.$router.getRoutes()" :key="route.name" @click="toggleMobileMenu" :to="route.path" class="navbar-item" :style="currentRoute(route.path)">
+          {{ $t(route.props.default.text) }}
+        </router-link>
       </div>
     </div>
   </nav>
@@ -44,7 +43,21 @@ export default {
   data() {
     return {
       isMobileMenuOpen: false,
+      scrollPosition: 0,
+      scaleTrigger1: 300, // Scroll position for the first size change
+      scaleTrigger2: 600, // Scroll position for the second size change    
     };
+  }, 
+  computed: {
+    computedNavbarHeight() {
+      if (this.scrollPosition <= this.scaleTrigger1) {
+        return 150; // Default height
+      } else if (this.scrollPosition <= this.scaleTrigger2 ) {
+        return 100; // Adjusted height
+      } else {
+        return 70; // Adjusted height
+      }
+    },
   },
   methods: {
     toggleMobileMenu() {
@@ -55,13 +68,35 @@ export default {
     },
     currentRoute(route) {
       return this.$router.currentRoute.value.fullPath === route ? 'font-weight: bold' : ''
+    },
+    handleScroll() {
+      // Update scroll position
+      this.scrollPosition = window.scrollY
     }
   },
+  mounted() {
+    // Add a scroll event listener when the component is mounted
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    // Remove the scroll event listener when the component is destroyed to avoid memory leaks
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 };
 </script>
 
 <style scoped>
 /* Updated styles for a wide navbar with gray background and black text */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-brand {
+  background-color: white;
+}
 .navbar-desktop {
   background-color: #E3E1E5; /* Gray background */
   display: flex;
@@ -69,10 +104,6 @@ export default {
   justify-content: space-around;
   padding: 1rem;
   color: #000; /* Black text */
-}
- 
-.container {
-  width: 100%; /* Make the container full-width */
 }
 
 .languageselector {
@@ -98,9 +129,9 @@ export default {
 }
 
 img {
-    max-width: 100%;
-    max-height: 300px; /* Set a reasonable max height for the image */
-}
+    max-height: 150px; /* Set a reasonable max height for the image */
+    transition: max-height 0.3s ease-out;
+  }
 
 .navbar-item {
   color: inherit;

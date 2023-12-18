@@ -46,7 +46,6 @@
   .photo {
     width: 200px; /* Adjust as needed for the photo size */
     height: 200px; /* Adjust as needed for the photo size */
-    background-color: #ddd; /* Placeholder color for the photo */
     border-radius: 50%; /* Creates a round shape */
     margin-bottom: 10px; /* Adjust as needed for spacing */
   }
