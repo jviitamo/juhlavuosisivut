@@ -99,10 +99,6 @@ export default {
   top: 0;
   width: 100%;
 }
-
-.navbar-brand {
-  background-color: white;
-}
 .navbar-desktop {
   background-color: #E3E1E5; /* Gray background */
   display: flex;
@@ -135,7 +131,8 @@ export default {
 
 .navbar-brand {
   font-size: 1.5rem;
-  padding-top: 50px;
+  padding-top: 30px;
+  background-color: white;
 }
 
 img {
@@ -206,6 +203,11 @@ img {
   .navbar-desktop, .desktop {
     display: none; /* Hide the desktop menu */
   }
+
+  .navbar-brand {
+    padding-top: 10px;
+  }
+  
 
 }
 
