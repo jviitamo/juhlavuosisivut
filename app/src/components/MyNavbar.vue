@@ -51,11 +51,11 @@ export default {
   computed: {
     computedNavbarHeight() {
       if (this.scrollPosition <= this.scaleTrigger1) {
-        return 150; // Default height
+        return 130; // Default height
       } else if (this.scrollPosition <= this.scaleTrigger2 ) {
-        return 100; // Adjusted height
+        return 90; // Adjusted height
       } else {
-        return 70; // Adjusted height
+        return 60; // Adjusted height
       }
     },
   },
