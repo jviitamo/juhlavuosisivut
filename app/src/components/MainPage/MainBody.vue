@@ -2,15 +2,17 @@
 
 <template>
   <div class="main-body-container">
-    <h1 class="main-heading">ATHENE 25</h1>
     <CardComponent imageName="ruukku_logo.svg" order="textFirst">
-      <p class="bold-header">{{ $t('main_page[0].main_page_1') }}</p>
+      <div>
+        <h1 class="main-heading">ATHENE 25</h1>
+        <p class="bold-header">{{ $t('main_page[0].main_page_1') }}</p>
+      </div>
     </CardComponent>
     <CardComponent imageName="nainen_paa.svg" order="imageFirst">
-      <p>{{ $t('main_page[0].main_page_2') }}</p>
+      <p class="bold-header">{{ $t('main_page[0].main_page_2') }}</p>
     </CardComponent>
     <CardComponent imageName="pollo.svg" order="textFirst">
-      <p>{{ $t('main_page[0].main_page_3') }}</p>
+      <p class="bold-header">{{ $t('main_page[0].main_page_3') }}</p>
     </CardComponent>
     <CardComponent imageName="mies_paa.svg" order="imageFirst">
       <p class="bold-header">

@@ -56,9 +56,13 @@
     justify-content: space-between;
   }
   
-  .text-content, .image-content  {
+  .text-content {
     flex: 1;
-    text-align: center;
+    text-align: left;
+  }
+
+  .image-content  {
+    flex: 1;
   }
   
   .card-image {
@@ -71,6 +75,15 @@
     .card-container {
       gap: 20px; /* Adjust the value to increase or decrease the spacing */
     }
+
+  }
+
+    /* Increase the spacing between text and image */
+  @media screen and (max-width: 600px) {
+  .text-content {
+    text-align: center;
+  }
+
   }
   </style>
   
