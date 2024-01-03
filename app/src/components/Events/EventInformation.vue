@@ -2,10 +2,10 @@
 <template>
     <div @click="toggleBox" class="clickable-text">
         <div class="first-information-container">
-            <div>{{ date }} {{ text }}</div>
-            <div :class="{ 'arrow-up': isArrowUp, 'arrow-down': !isArrowUp }"></div>
-          </div>
-      <div v-if="isBoxVisible" class="info-box">
+          <div>{{ date }} {{ text }}</div>
+          <div :class="{ 'arrow-up': isArrowUp, 'arrow-down': !isArrowUp }"></div>
+        </div>
+      <div v-if="isBoxVisible" class="info-box" @click.stop >
         <div class="image-content">
           <img :src="imageEventUrl" alt="Image" class="card-image" />
         </div>
@@ -25,7 +25,7 @@
         </div>
         <p v-if="information">{{ information }}</p>
         <p v-else>{{ $t('event_headers[0].more_info') }}</p>
-        <a @click.stop v-if="link" class="link" :href="link" target="_blank">{{ $t('event_headers[0].link_button') }}</a>
+        <a v-if="link" class="link" :href="link" target="_blank">{{ $t('event_headers[0].link_button') }}</a>
       </div>
     </div>
   </template>
@@ -140,6 +140,7 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  cursor: default;
 }
 
 .info-box > p {
