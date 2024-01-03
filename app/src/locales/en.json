@@ -70,5 +70,21 @@
       "text_1": "contact the Athene 25 committee",
       "text_2": "to arrange it. Both the committee and guild will support you in organizing events, so please contact us and participate in making this year amazing!"
     }
+  ],
+  "contact": [
+    {
+      "responsible": "Athene 25 director",
+      "companies": "Coprorate relations",
+      "events": "Events",
+      "graphics": "Events and graphics",
+      "communication": "Events and communications",
+      "seminar": "Seminar",
+      "web": "Web site"
+    }
+  ],
+  "ball": [
+    {
+      "text1": "Athene's 25th annual ball, Infoähky XXV, will be celebrated later in the year - more information closer to the event"
+    }
   ]
 }

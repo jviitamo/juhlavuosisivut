@@ -35,18 +35,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.bold-header {
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-@media screen and (max-width: 600px) {
-  .bold-header {
-    font-size: 1.5rem;
-  }
-}
-
-
-</style>

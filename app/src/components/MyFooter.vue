@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="content has-text-centered">
-      <p>#athene25 #athenehommat</p>
+      <p> athene.fi #athene25 #athenehommat</p>
     </div>
   </footer>
 </template>

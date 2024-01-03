@@ -1,10 +1,11 @@
-.main-body-container {
+.main-body-container, .main-body-container-2nd {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 4rem 2rem;
     width: 80%;
+    justify-content: flex-start;
     margin: 0 auto;
+    min-height: 80vh; /* This sets the minimum height to 100% of the viewport height */
   }
   
   .main-heading {
@@ -15,8 +16,16 @@
     margin-right: auto;
   }
 
+  .main-heading-center {
+    margin-left: 0;
+    margin-bottom: 1rem; /* Add margin to separate the heading from the CardComponent */
+    font-size: 60px;
+    font-family: 'Magra';
+    text-align: center;
+  }
+
   @media screen and (max-width: 600px) {
-    .main-heading {
+    .main-heading, .main-heading-center {
         font-size: 44px;
     }
   }
@@ -35,4 +44,15 @@
 
 .link-underline-prevent-default:hover, .link-bold-prevent-default:hover {
   opacity: 0.7;
+}
+
+.bold-header {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .bold-header {
+    font-size: 1.5rem;
+  }
 }

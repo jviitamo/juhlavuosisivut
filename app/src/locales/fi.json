@@ -70,5 +70,21 @@
       "text_1": "ota yhteyttä",
       "text_2": " juhlavuositoimikuntaan sopiaksesi asiasta. Tapahtumien järjestämiseen saa tukea sekä toimikunnalta että killalta, joten olethan rohkeasti yhteydessä ja osallistu juhlavuoden toteuttamiseen!"
     }
+  ],
+  "contact": [
+    {
+      "responsible": "Athene 25 tirehtööri",
+      "companies": "Yrityssuhteet",
+      "events": "Tapahtumat",
+      "graphics": "Grafiikat ja tapahtumat",
+      "communication": "Grafiikat ja viestintä",
+      "seminar": "Seminaari",
+      "web": "Nettisivut"
+    }
+  ],
+  "ball": [
+    {
+      "text1": "Athenen 25. vuosijuhlaa eli Infoähky XXV:tä vietetään loppuvuodesta - lisää tietoa syssymmällä"
+    }
   ]
 }
