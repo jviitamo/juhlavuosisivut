@@ -5,13 +5,13 @@
     width: 80%;
     justify-content: flex-start;
     margin: 0 auto;
-    min-height: 80vh; /* This sets the minimum height to 100% of the viewport height */
+    min-height: 60vh; /* This sets the minimum height to 100% of the viewport height */
   }
   
   .main-heading {
     margin-left: 0;
     margin-bottom: 1rem; /* Add margin to separate the heading from the CardComponent */
-    font-size: 60px;
+    font-size: 0px;
     font-family: 'Magra';
     margin-right: auto;
   }
