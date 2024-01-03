@@ -47,13 +47,15 @@
     {
       "text": "Seminar",
       "date": "15.3."
-    },
+    }
+  ],
+  "events_2": [
     {
       "text": "Mega beer croquette",
       "date": "27.4."
     }
   ],
-  "events_2": [
+  "events_3": [
     {
       "text": "Annual ball week party"
     },

@@ -11,38 +11,56 @@
             <img src="@/assets/left.svg" alt="Logo" />
         </div>
         <div class="event-information-container">
-        <EventInformation
-            v-for="(message, key) in getEvents('events_0')" :key="key"
-            :text=message.text
-            :information=message.information
-            :location=message.location 
-            :date=message.date
-            :time=message.time
-            :imageName=message.imageName
-            :link=message.link
-        />     
-        <h2>{{ $t('event_headers[0].header_3') }}</h2>   
-        <EventInformation
-            v-for="(message, key) in getEvents('events_1')" :key="key"
-            :text=message.text
-            :information=message.information
-            :location=message.location 
-            :date=message.date
-            :time=message.time
-            :imageName=message.imageName
-            :link=message.link
-        />    
-        <h2>{{ $t('event_headers[0].header_4') }}</h2>   
-        <EventInformation
-            v-for="(message, key) in getEvents('events_2')" :key="key"
-            :text=message.text
-            :information=message.information
-            :location=message.location 
-            :date=message.date
-            :time=message.time
-            :imageName=message.imageName
-            :link=message.link
-        />        
+            <div>
+                <EventInformation
+                    v-for="(message, key) in getEvents('events_0')" :key="key"
+                    :text=message.text
+                    :information=message.information
+                    :location=message.location 
+                    :date=message.date
+                    :time=message.time
+                    :imageName=message.imageName
+                    :link=message.link
+                />
+            </div>
+            <div>     
+                <h2>{{ $t('event_headers[0].header_3') }}</h2>   
+                <EventInformation
+                    v-for="(message, key) in getEvents('events_1')" :key="key"
+                    :text=message.text
+                    :information=message.information
+                    :location=message.location 
+                    :date=message.date
+                    :time=message.time
+                    :imageName=message.imageName
+                    :link=message.link
+                />
+            </div>
+            <div class="add-margin-top">     
+                <EventInformation
+                    v-for="(message, key) in getEvents('events_2')" :key="key"
+                    :text=message.text
+                    :information=message.information
+                    :location=message.location 
+                    :date=message.date
+                    :time=message.time
+                    :imageName=message.imageName
+                    :link=message.link
+                />
+            </div>
+            <div>         
+                <h2>{{ $t('event_headers[0].header_4') }}</h2>   
+                <EventInformation
+                    v-for="(message, key) in getEvents('events_3')" :key="key"
+                    :text=message.text
+                    :information=message.information
+                    :location=message.location 
+                    :date=message.date
+                    :time=message.time
+                    :imageName=message.imageName
+                    :link=message.link
+                />
+            </div>        
         </div>
     </div>
   </template>
@@ -106,6 +124,10 @@
     text-align: left;
     width: 60%;
     margin: auto;
+}
+
+.add-margin-top {
+    margin-top: 100px;
 }
 
 @media screen and (max-width: 600px) {

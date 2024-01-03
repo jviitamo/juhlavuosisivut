@@ -107,7 +107,7 @@
 }
 .clickable-text {
   cursor: pointer;
-  margin: 100px auto;
+  margin: 60px auto;
 }
 
 .image-content {
