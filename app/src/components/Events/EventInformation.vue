@@ -6,8 +6,8 @@
             <div :class="{ 'arrow-up': isArrowUp, 'arrow-down': !isArrowUp }"></div>
           </div>
       <div v-if="isBoxVisible" class="info-box">
-        <div class="image-content" v-if="imageName">
-          <img :src="imageUrl" alt="Image" class="card-image" />
+        <div class="image-content">
+          <img :src="imageEventUrl" alt="Image" class="card-image" />
         </div>
         <div class="info-box-details">
           <div class="info-box-details-element">
@@ -23,7 +23,8 @@
             {{ location }}
           </div>
         </div>
-        <p>{{ information }}</p>
+        <p v-if="information">{{ information }}</p>
+        <p v-else>{{ $t('event_headers[0].more_info') }}</p>
         <a @click.stop v-if="link" class="link" :href="link" target="_blank">{{ $t('event_headers[0].link_button') }}</a>
       </div>
     </div>
@@ -39,7 +40,7 @@
       },
       information: {
         type: String,
-        default: 'More info coming soon',
+        default: ''
       },
       date: {
         type: String,
@@ -55,7 +56,7 @@
       },
       imageName: {
         type: String,
-        default: '', // Image name from the assets folder
+        default: 'Rectangle.png', // Image name from the assets folder
       },
       link: {
         type: String,
@@ -63,6 +64,9 @@
       }
     },
     computed: {
+      imageEventUrl() {
+        return require(`@/assets/events/${this.imageName}`);
+      },
       imageUrl() {
         return require(`@/assets/${this.imageName}`);
       }

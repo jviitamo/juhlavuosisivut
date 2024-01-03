@@ -23,78 +23,45 @@
     {
       "header_1": "JUHLAVUODEN TAPAHTUMAT",
       "header_2": "Täältä löydät kaikki juhlavuoden tapahtumat",
-      "header_3": "Alaotsikko 1",
-      "header_4": "Wappuviikko",
-      "link_button": "Ilmomasiinaan"
+      "header_3": "Kevään juhlaviikko",
+      "header_4": "Vuosijuhlaviikko",
+      "link_button": "Ilmomasiinaan",
+      "more_info": "Lisää tietoa tulossa myöhemmin"
     }
   ],
   "events_0": [
     {
-      "text": "Tapahtuma 0",
-      "information": "Tähän tule lisätietoa.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Vuodenavausbrunssi",
+      "information": "Juhlavuosi alkaa rykäyksellä maanantaina 8.1. kun Athene 25 -toimikunta pistää pöydän koreaksi Athene XXV päräyttävällä vuodenavausbrunssilla. Saavu siis aloittamaan vuosi herkutellen kera kiltakavereiden ja selvittämään, mitä kaikkea juhlavuosi pitääkään sisällään!",
+      "location": "OLOhuone",
+      "date": "8.1.",
+      "time": "9.00-11.30",
+      "imageName": "brunch.jpg",
+      "link": "https://athene.fi/ilmo/event/413"
     }
   ],
   "events_1": [
     {
-      "text": "Tapahtuma 1",
-      "information": "Tähän tule lisätietoa.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Tanssiaiset"
     },
     {
-      "text": "Tapahtuma 2",
-      "information": "Tähän tule lisätietoa.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Seminaari",
+      "date": "15.3."
     },
     {
-      "text": "Tapahtuma 3",
-      "information": "Tähän tule lisätietoa.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Megakaljakroke",
+      "date": "27.4."
     }
   ],
   "events_2": [
     {
-      "text": "Tapahtuma 4",
-      "information": "Tähän tule lisätietoa.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Vujuviikon bileet"
     },
     {
-      "text": "Tapahtuma 5",
-      "information": "Tähän tule lisätietoa.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Infoähky"
     },
     {
-      "text": "Tapahtuma 6",
-      "information": "Tähän tule lisätietoa.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Purkusessio"
     }
   ],
   "for_guild": [

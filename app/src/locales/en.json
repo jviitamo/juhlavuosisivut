@@ -1,12 +1,12 @@
 {
   "main_page": [
     {
-      "main_page_1": "Welcome to celebrate the 25th anniversary of the Guild of Information Networks, Athene!",
+      "main_page_1": "Welcome to celebrate the 25th jubilee of the Guild of Information Networks, Athene!",
       "main_page_2": "Throughout the year, guild members will have the opportunity to delve into Athen's history and participate in historical guild events.",
-      "main_page_3": "In honor of the anniversary, numerous events and activities will be organized for both guild members and the entire Otaniemi community. The celebratory year culminates in November / December with Infoähky!",
+      "main_page_3": "In honor of the jubilee, numerous events and activities will be organized for both guild members and the entire Otaniemi community. The celebratory year culminates in November / December with Infoähky!",
       "main_page_4": "Join us",
-      "main_page_5": "in making this anniversary year memorable!",
-      "main_page_6": "JOIN US IN MAKING THIS ANNIVERSARY YEAR"
+      "main_page_5": "in making this jubilee memorable!",
+      "main_page_6": "JOIN US IN MAKING THIS JUBILEE"
     }
   ],
   "nav_bar": [
@@ -21,86 +21,53 @@
   ],
   "event_headers": [
     {
-      "header_1": "ANNIVERSARY EVENTS",
-      "header_2": "Here you can find all the events of the anniversary year!",
-      "header_3": "Title 1",
-      "header_4": "Wappu week",
-      "link_button": "To ilmomasiina"
+      "header_1": "JUBILEE EVENTS",
+      "header_2": "Here you can find all the events of the jubilee!",
+      "header_3": "Spring celebration week",
+      "header_4": "Annubal ball week",
+      "link_button": "To ilmomasiina",
+      "more_info": "More information coming later"
     }
   ],
   "events_0": [
     {
-      "text": "Event 0",
-      "information": "This is the additional information.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Year opening brunch",
+      "information": "The jubilee kicks off with a bang on Monday 8th of January when the Athene 25 committee will set the table with Athene XXV fabulous year opening brunch. So come and start the year with a treat with your guildmates and find out what the year has in store!",
+      "location": "OLOhuone",
+      "date": "8.1.",
+      "time": "9.00-11.30",
+      "imageName": "brunch.jpg",
+      "link": "https://athene.fi/ilmo/event/413"
     }
   ],
   "events_1": [
     {
-      "text": "Event 1",
-      "information": "This is the additional information.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Ball"
     },
     {
-      "text": "Event 2",
-      "information": "This is the additional information.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Seminar",
+      "date": "15.3."
     },
     {
-      "text": "Event 3",
-      "information": "This is the additional information.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Mega beer croquette",
+      "date": "27.4."
     }
   ],
   "events_2": [
     {
-      "text": "Event 4",
-      "information": "This is the additional information.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Annual ball week party"
     },
     {
-      "text": "Event 5",
-      "information": "This is the additional information.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Infoähky"
     },
     {
-      "text": "Event 6",
-      "information": "This is the additional information.",
-      "location": "Olkkari",
-      "date": "2.1.",
-      "time": "15.00-20.00",
-      "imageName": "pollo.svg",
-      "link": "https://athene.fi/ilmo/event/407"
+      "text": "Purkusessio"
     }
   ],
   "for_guild": [
     {
-      "text_0": "All guild members are welcome to join us in making this anniversary year memorable. If you want to organize an event as a part of the anniversary year,",
-      "text_1": "contact the anniversary year committee",
+      "text_0": "All guild members are welcome to join us in making this jubilee memorable. If you want to organize an event as a part of the jubilee,",
+      "text_1": "contact the Athene 25 committee",
       "text_2": "to arrange it. Both the committee and guild will support you in organizing events, so please contact us and participate in making this year amazing!"
     }
   ]
