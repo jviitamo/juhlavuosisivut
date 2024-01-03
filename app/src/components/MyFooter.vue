@@ -1,7 +1,10 @@
 <template>
   <footer class="footer">
     <div class="content has-text-centered">
-      <p> athene.fi #athene25 #athenehommat</p>
+      <p> 
+        <a href="https://athene.fi" target="a_blank">athene.fi</a> 
+        #athene25 #athenehommat
+      </p>
     </div>
   </footer>
 </template>
@@ -19,5 +22,10 @@ export default {
   padding: 1rem 0;
   color: #000;
   width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
 }
 </style>
