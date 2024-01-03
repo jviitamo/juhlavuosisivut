@@ -65,6 +65,7 @@ export default {
     },
     switchLanguage(lang) {
       this.$i18n.locale = lang;
+      this.isMobileMenuOpen = false
     },
     currentRoute(route) {
       return this.$router.currentRoute.value.fullPath === route ? 'font-weight: bold' : ''
