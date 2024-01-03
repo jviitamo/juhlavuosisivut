@@ -111,6 +111,7 @@
 @media screen and (max-width: 600px) {
     .event-information-container {
         width: 90%;
+        padding: 1rem 0;
     }
 
     .event-header  > img {
