@@ -2,7 +2,8 @@
 
 <template>
     <div class="box">
-      <img :src="imageUrl" class="photo" alt="Image" />
+      <img :src="imageUrl" class="photo" alt="Image" @click="playMusic">
+      <audio v-if="musicSrc" ref="audioPlayer" :src="musicUrl"></audio>
       <div class="info">
         <p class="name">{{ name }}</p>
         <p class="title">{{ title }}</p>
@@ -22,13 +23,34 @@
       photoUrl: {
         type: String, // You can pass the URL for the round photo as a prop
         default: "ellipse.svg"
+      },
+      musicSrc: {
+        type: String,
+        default: ""
       }
     },
     computed: {
       imageUrl() {
         return require(`@/assets/people/${this.photoUrl}`);
       },
-    }
+      musicUrl() {
+        return require(`@/assets/${this.musicSrc}`);
+      },
+    }, 
+    methods: {
+        playMusic() {
+          if (this.musicSrc) {
+            const audioPlayer = this.$refs.audioPlayer;
+            audioPlayer.currentTime = 19;
+            audioPlayer.play();
+            audioPlayer.addEventListener('timeupdate', () => {
+              if (audioPlayer.currentTime >= 21.3) {
+                audioPlayer.pause();
+              }
+            });
+          }
+        }
+      }
   };
   </script>
   

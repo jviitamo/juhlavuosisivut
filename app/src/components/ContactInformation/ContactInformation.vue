@@ -12,7 +12,7 @@
           <BoxComponent name="Iida Lehikoinen" email="iida.lehikoinen@aalto.fi" photoUrl="iida.png" telegram="@iidalehikoinen" :title="$t('contact[0].communication')" />
           <BoxComponent name="Inkeri Nora" email="inkeri.nora@aalto.fi" photoUrl="inkeri.jpg" telegram="@inkuri" :title="$t('contact[0].seminar')" />
           <BoxComponent name="Niklas Koskela" email="niklas.koskela@aalto.fi" photoUrl="niklas.jpg" telegram="@Nicodeemus" :title="$t('contact[0].seminar')" />
-          <BoxComponent name="Juhana Viitamo" email="juhana.viitamo@aalto.fi" photoUrl="juhana.jpg" telegram="@juhanaviitamo" :title="$t('contact[0].web')" />
+          <BoxComponent name="Juhana Viitamo" email="juhana.viitamo@aalto.fi" photoUrl="juhana.jpg" telegram="@juhanaviitamo" :title="$t('contact[0].web')" musicSrc="sound.mp3" />
         </div>
     </div>
   </template>
