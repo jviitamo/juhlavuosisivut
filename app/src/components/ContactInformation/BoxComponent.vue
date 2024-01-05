@@ -41,21 +41,16 @@
         playMusic() {
           if (this.musicSrc) {
             const audioPlayer = this.$refs.audioPlayer;
+            // Check if the audio is currently paused, then play it
             if (audioPlayer.paused) {
-              audioPlayer.currentTime = 19;
               audioPlayer.play();
-
-              audioPlayer.addEventListener('timeupdate', () => {
-              if (audioPlayer.currentTime >= 21) {
-                  audioPlayer.pause();
-                  audioPlayer.currentTime = 19;
-                }
-              });
             } else {
+              // If it's already playing, pause it
               audioPlayer.pause();
-              audioPlayer.currentTime = 19;
+              // To start from the beginning when clicking again
+              audioPlayer.currentTime = 0;
             }
-          }
+    }
         }
       }
   };
