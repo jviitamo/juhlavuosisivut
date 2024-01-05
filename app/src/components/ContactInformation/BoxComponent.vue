@@ -41,13 +41,20 @@
         playMusic() {
           if (this.musicSrc) {
             const audioPlayer = this.$refs.audioPlayer;
-            audioPlayer.currentTime = 19;
-            audioPlayer.play();
-            audioPlayer.addEventListener('timeupdate', () => {
-              if (audioPlayer.currentTime >= 21.3) {
-                audioPlayer.pause();
-              }
-            });
+            if (audioPlayer.paused) {
+              audioPlayer.currentTime = 19;
+              audioPlayer.play();
+
+              audioPlayer.addEventListener('timeupdate', () => {
+              if (audioPlayer.currentTime >= 21) {
+                  audioPlayer.pause();
+                  audioPlayer.currentTime = 19;
+                }
+              });
+            } else {
+              audioPlayer.pause();
+              audioPlayer.currentTime = 19;
+            }
           }
         }
       }
