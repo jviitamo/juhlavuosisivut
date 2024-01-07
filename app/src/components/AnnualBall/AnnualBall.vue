@@ -2,8 +2,10 @@
 
 <template>
     <div class="main-body-container">
-      <h1 class="main-heading-center">{{ $t('nav_bar[0].annual_ball_header') }}</h1>
-      <p class="bold-header"><b>{{ $t('ball[0].text1') }}</b></p>
+      <div class="text-container">
+        <h1 class="main-heading-center">{{ $t('nav_bar[0].annual_ball_header') }}</h1>
+        <p class="bold-text">{{ $t('ball[0].text1') }}</p>
+      </div>
     </div>
   </template>
   

@@ -57,7 +57,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 90%;
-  margin: auto;
+  margin: 50px auto;
 }
 .header-container > p {
   font-size: 2rem;
@@ -73,6 +73,7 @@
 
   .header-container {
     width: 100%;
+    margin: auto;
   }
 
   .header-container > img {
