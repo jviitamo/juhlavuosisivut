@@ -7,7 +7,7 @@
       <div @click="switchLanguage('en')" :style="[this.$i18n.locale  === 'en' ? 'text-decoration: underline' : '']">EN</div>
     </div>
 
-    <div class="languageselector mobile" v-if="isMobileMenuOpen">
+    <div class="languageselector mobile" v-if="isMobileMenuOpen" @click.stop >
       <div @click="switchLanguage('fi')" :style="[this.$i18n.locale  === 'fi' ? 'text-decoration: underline' : '']">FI</div>
       <div>|</div>
       <div @click="switchLanguage('en')" :style="[this.$i18n.locale  === 'en' ? 'text-decoration: underline' : '']">EN</div>
@@ -34,7 +34,7 @@
       </button>
 
       <!-- Mobile menu content -->
-      <div class="navbar-mobile" v-if="isMobileMenuOpen">
+      <div class="navbar-mobile" v-if="isMobileMenuOpen" @click.stop >
         <router-link v-for="route in this.$router.getRoutes()" :key="route.name" @click="toggleMobileMenu" :to="route.path" class="navbar-item" :style="currentRoute(route.path)">
           {{ $t(route.props.default.text) }}
         </router-link>
