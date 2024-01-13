@@ -6,7 +6,7 @@
         <h1>{{ $t('main_page[0].main_page_6') }}</h1>
         <div class="header-container">
           <img src="@/assets/pylvas.svg" alt="Logo" />
-          <p> {{ $t('for_guild[0].text_0') }} <router-link to="/contact" class="link-bold-prevent-default">{{ $t('for_guild[0].text_1') }}</router-link> {{ $t('for_guild[0].text_2') }} </p>
+          <p> {{ $t('for_guild[0].text_0') }} <router-link :to="{ name: 'ContactInformation', params: { lang: this.$route.params.lang || 'en' }}" class="link-bold-prevent-default">{{ $t('for_guild[0].text_1') }}</router-link> {{ $t('for_guild[0].text_2') }} </p>
           <img src="@/assets/pylvas.svg" alt="Logo" />
         </div>
     </div>

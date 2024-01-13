@@ -16,7 +16,7 @@
     </CardComponent>
     <CardComponent imageName="mies_paa.svg" order="imageFirst">
       <p class="bold-header">
-        <router-link to="/guild" class="link-underline-prevent-default">
+        <router-link :to="{ name: 'ForGuild', params: { lang: this.$route.params.lang || 'en' }}" class="link-underline-prevent-default">
           {{ $t('main_page[0].main_page_4') }} 
         </router-link>
         {{ $t('main_page[0].main_page_5') }}

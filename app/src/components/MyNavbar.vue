@@ -14,14 +14,14 @@
     </div>
 
     <div class="navbar-brand">
-      <router-link to="/" class="link-underline-prevent-default">
+      <router-link :to="{ name: 'Home', params: { lang: this.$route.params.lang || 'en' }}" class="link-underline-prevent-default">
         <img src="@/assets/logo.svg" alt="Logo" :style="{ maxHeight: `${computedNavbarHeight}px` }" />
       </router-link >
     </div>
     
     <div class="navbar-menu">
       <div class="navbar-desktop">
-        <router-link v-for="route in this.$router.getRoutes()" :key="route.name" :to="route.path" class="navbar-item" :style="currentRoute(route.path)">
+        <router-link v-for="route in this.$router.getRoutes()" :key="route.name" :to="{ name: route.name, params: { lang: this.$route.params.lang || 'en' }}" class="navbar-item" :style="currentRoute(route)">
           {{ $t(route.props.default.text) }}
         </router-link>
       </div>
@@ -35,7 +35,7 @@
 
       <!-- Mobile menu content -->
       <div class="navbar-mobile" v-if="isMobileMenuOpen" @click.stop >
-        <router-link v-for="route in this.$router.getRoutes()" :key="route.name" @click="toggleMobileMenu" :to="route.path" class="navbar-item" :style="currentRoute(route.path)">
+        <router-link v-for="route in this.$router.getRoutes()" :key="route.name" @click="toggleMobileMenu" :to="{ name: route.name, params: { lang: this.$route.params.lang || 'en' }}" class="navbar-item" :style="currentRoute(route)">
           {{ $t(route.props.default.text) }}
         </router-link>
       </div>
@@ -64,11 +64,11 @@ export default {
       this.isMobileMenuOpen = !this.isMobileMenuOpen;
     },
     switchLanguage(lang) {
-      this.$i18n.locale = lang;
+      this.$router.push({ name: this.$route.name, params: { lang } });
       this.isMobileMenuOpen = false
     },
     currentRoute(route) {
-      return this.$router.currentRoute.value.fullPath === route ? 'font-weight: bold' : ''
+      return this.$router.currentRoute.value.name === route.name ? 'font-weight: bold' : ''
     },
     handleScroll() {
       // Update scroll position
