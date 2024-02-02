@@ -35,7 +35,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-family: 'Magra';
 }
 
 

@@ -1,3 +1,4 @@
+
 .main-body-container {
     display: flex;
     flex-direction: column;
@@ -11,8 +12,7 @@
   .main-heading, .main-heading-center {
     margin-left: 0;
     margin-bottom: 1rem; /* Add margin to separate the heading from the CardComponent */
-    font-size: 60px;
-    font-family: 'Magra';
+    font-size: 64px;
   }
 
   .main-heading {
@@ -51,6 +51,9 @@
 
 .bold-header {
   font-weight: bold;
+}
+
+.header, .bold-header {
   font-size: 2rem;
 }
 
@@ -61,7 +64,7 @@
 
 
 @media screen and (max-width: 600px) {
-  .bold-header {
+  .bold-header, header {
     font-size: 1.5rem;
   }
 
