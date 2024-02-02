@@ -60,7 +60,7 @@ img {
     }
 
     .seminar-heading {
-        letter-spacing: 6px; /* Adjust this value to control the spacing between letters */
+        letter-spacing: 3px; /* Adjust this value to control the spacing between letters */
     }
 
     img {
@@ -68,7 +68,7 @@ img {
     }
 
     .inner-header-container {
-        max-width: 350px;
+        max-width: 300px;
     }
   }
 
