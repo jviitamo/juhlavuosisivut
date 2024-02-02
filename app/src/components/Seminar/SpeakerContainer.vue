@@ -5,8 +5,21 @@
       <div class="text-content">
         <slot></slot>
       </div>
-      <div class="image-content">
-        <img :src="imageUrl" alt="Image" class="card-image" />
+      <div class="image-content" :style="{ justifyContent: justifyContent, flexDirection: imagesOrder }">
+        <div>
+            <img :src="imageUrl" alt="Image" class="card-image" />
+            <div>
+                <p class="bold-text">{{ $t('seminar[0].fun_fact') }}</p>
+                <p class="italic-text">{{ text }}</p>
+            </div>
+        </div>
+        <div v-if="text2 && this.imageName2">
+            <div>
+                <p class="bold-text">{{ $t('seminar[0].fun_fact') }}</p>
+                <p class="italic-text">{{ text2 }}</p>
+            </div>
+            <img :src="imageUrl2" alt="Image" class="card-image" />
+        </div>
       </div>
     </div>
   </template>
@@ -19,7 +32,15 @@
         type: String,
         default: '',
       },
+      text2: {
+        type: String,
+        default: '',
+      },
       imageName: {
+        type: String,
+        default: '', // Image name from the assets folder
+      },
+      imageName2: {
         type: String,
         default: '', // Image name from the assets folder
       },
@@ -30,20 +51,26 @@
       textSize: {
         type: String,
         default: '16px', // Default text size
-      },
-      isBold: {
-        type: Boolean,
-        default: false, // Default to non-bold text
-      },
+      }
     },
     computed: {
       imageUrl() {
-        return require(`@/assets/${this.imageName}`);
+        return require(`@/assets/speakers/${this.imageName}`);
+      },
+      imageUrl2() {
+        return require(`@/assets/speakers/${this.imageName2}`);
       },
       flexDirection() {
         if (window.innerWidth < 600) return 'column';
         return this.order === 'imageFirst' ? 'row-reverse' : 'row';
       },
+      justifyContent() {
+        return this.order === 'imageFirst' ? 'flex-start' : 'flex-end';
+      },
+      imagesOrder() {
+        if (600 < window.innerWidth && window.innerWidth < 900) return 'column';
+        else return "row"
+      }
     },
   };
   </script>
@@ -54,20 +81,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 100px auto;
+    max-width: 1000px;
   }
   
   .text-content {
     flex: 1;
-    text-align: left;
   }
 
   .image-content  {
     flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .italic-text {
+    font-style: italic;
+    max-width: 250px;
+    margin: auto;
   }
   
   .card-image {
-    max-width: 100%;
-    max-height: 300px; /* Set a reasonable max height for the image */
+    max-height: 200px; /* Set a reasonable max height for the image */
+    margin: 20px 0;
   }
   
   /* Increase the spacing between text and image */
@@ -75,15 +112,16 @@
     .card-container {
       gap: 20px; /* Adjust the value to increase or decrease the spacing */
     }
-
   }
 
     /* Increase the spacing between text and image */
   @media screen and (max-width: 600px) {
-  .text-content {
-    text-align: center;
-  }
-
+    .text-content {
+        text-align: center;
+    }
+    .card-container {
+        margin: 30px auto;
+    }
   }
   </style>
   

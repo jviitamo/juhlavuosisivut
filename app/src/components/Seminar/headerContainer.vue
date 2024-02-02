@@ -19,7 +19,7 @@
 <script>
 
 export default {
-name: 'SeminarPage'
+name: 'HeaderContainer'
 };
 </script>
 
@@ -47,7 +47,7 @@ name: 'SeminarPage'
 }
 
 img {
-    height: 150px;
+    height: 250px;
 }
 
 .text-smaller {
