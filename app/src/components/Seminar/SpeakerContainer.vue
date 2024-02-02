@@ -5,7 +5,7 @@
       <div class="text-content">
         <slot></slot>
       </div>
-      <div class="image-content" :style="{ justifyContent: justifyContent, flexDirection: imagesOrder }">
+      <div class="image-content" :style="{ justifyContent: justifyContent }">
         <div>
             <img :src="imageUrl" alt="Image" class="card-image" />
             <div>
@@ -13,12 +13,12 @@
                 <p class="italic-text">{{ text }}</p>
             </div>
         </div>
-        <div v-if="text2 && this.imageName2">
+        <div v-if="text2 && this.imageName2" class="reverse">
+            <img :src="imageUrl2" alt="Image" class="card-image" />
             <div>
                 <p class="bold-text">{{ $t('seminar[0].fun_fact') }}</p>
                 <p class="italic-text">{{ text2 }}</p>
             </div>
-            <img :src="imageUrl2" alt="Image" class="card-image" />
         </div>
       </div>
     </div>
@@ -66,10 +66,6 @@
       },
       justifyContent() {
         return this.order === 'imageFirst' ? 'flex-start' : 'flex-end';
-      },
-      imagesOrder() {
-        if (600 < window.innerWidth && window.innerWidth < 900) return 'column';
-        else return "row"
       }
     },
   };
@@ -89,11 +85,17 @@
     flex: 1;
   }
 
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .image-content  {
     flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding: 10px;
   }
 
   .italic-text {
@@ -111,6 +113,17 @@
   @media screen and (min-width: 600px) {
     .card-container {
       gap: 20px; /* Adjust the value to increase or decrease the spacing */
+    }
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .reverse {
+        flex-direction: column;
+    }
+
+    .image-content {
+      flex-direction: column;
     }
   }
 
