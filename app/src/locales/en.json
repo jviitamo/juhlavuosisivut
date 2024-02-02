@@ -25,7 +25,7 @@
       "header_2": "Here you can find all the events of the jubilee!",
       "header_3": "Spring celebration week",
       "header_4": "Annual ball week",
-      "link_button": "To ilmomasiina",
+      "link_button": "More info",
       "more_info": "More information coming later"
     }
   ],
@@ -46,7 +46,12 @@
     },
     {
       "text": "Seminar",
-      "date": "15.3."
+      "information": "To celebrate the 25th anniversary of the programme and the Guild, we will bring together students, alumni and staff at the InfoXXV seminar. The day will begin with a series of great speeches, followed by a magical evening of fellowship and memorable moments until the small hours of the morning.",
+      "location": "Dipoli",
+      "date": "15.3.",
+      "time": "14.00-",
+      "imageName": "ruukku_logo.svg",
+      "link": "https://xxv.athene.fi/en/seminar"
     }
   ],
   "events_2": [
@@ -104,7 +109,7 @@
       "people_11": "Sonia Zaki, Helsingin Sanomat: Journalism just hits different",
       "people_12": "Sonia Zaki is a journalist for Helsingin Sanomat who follows topics related to work and tech. At InfoXXV-seminar she will talk about how a career can be found in a field completely different from the one you have studied. She will also share her experiences of the conflict that arises when you are passionate about your work, but you also want to have a life outside of it.",
       "people_13": "“I have played rugby.”",
-      "people_21": "Hertta Vuorenmaa, Aalto University: Navigating the Shifting Landscape of Work: Sustainability and Critical Thinking Imperatives",
+      "people_21": "Hertta Vuorenmaa, Aalto University:Navigating the Shifting Landscape of Work: Sustainability and Critical Thinking Imperatives",
       "people_221": "Hertta Vuorenmaa (PhD)  is a Research Program Director (Future of Work) and a University Lecturer at the Department of Management at Aalto University School of Business.​ She is also the chair of the The Finnish Association of Work Life Research (FAWORE).",
       "people_222": "Hertta is deeply passionate about ensuring the quality and sustainability of the Future of Work, consistently addressing this topic from various perspectives via her own research and teaching. Her speech at this event underscores key issues that demand our attention as we collaboratively strive to construct a more promising future of work.",
       "people_223": "Fun fact about Hertta: “When I'm not working towards a better future of work, you'll likely spot me hanging out with my son, often on the football pitch. Beyond that, I love cold water swimming, running and seek calm through the practice of yoga.”",
