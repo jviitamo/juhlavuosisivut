@@ -25,11 +25,6 @@ name: 'HeaderContainer'
 
 <style scoped>
 
-.header-container {
-    width: 100%;
-    color: #000000;
-}
-
 .seminar-heading {
     letter-spacing: 12px; /* Adjust this value to control the spacing between letters */
 }

@@ -1,7 +1,7 @@
 <!-- MainBody.vue -->
 
 <template>
-    <div class="main-body-container">
+    <div class="main-body-container text-black">
       <HeaderContainer />
       <div class="speaker-content">
         <h1 class="main-heading-center add-margin">{{ $t('seminar[0].header5') }}</h1>
@@ -32,6 +32,14 @@
           <p class="bold-text center-text">{{ $t('seminar[0].people_51') }}</p>
           <p class="center-text">{{ $t('seminar[0].people_52') }}</p>
         </SpeakerContainer>
+        <SpeakerContainer imageName="ellu.svg" order="textFirst" :text="$t('seminar[0].people_63')">
+          <p class="bold-text center-text">{{ $t('seminar[0].people_61') }}</p>
+          <p class="center-text">{{ $t('seminar[0].people_62') }}</p>
+        </SpeakerContainer>
+        <SpeakerContainer imageName="tino.svg" order="imageFirst" :text="$t('seminar[0].people_73')">
+          <p class="bold-text center-text">{{ $t('seminar[0].people_71') }}</p>
+          <p class="center-text">{{ $t('seminar[0].people_72') }}</p>
+        </SpeakerContainer>
     </div>
     </div>
   </template>
@@ -51,6 +59,10 @@
 </script>
 
 <style scoped>
+
+.text-black {
+  color: #000000;
+}
 
 .add-margin {
   margin-bottom: 100px;
