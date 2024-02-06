@@ -10,14 +10,14 @@
             <img :src="imageUrl" alt="Image" class="card-image" />
             <div>
                 <p class="bold-text">{{ $t('seminar[0].fun_fact') }}</p>
-                <p class="italic-text">{{ text }}</p>
+                <p class="italic-text">{{ reverseFunFact ? text2 : text }}</p>
             </div>
         </div>
         <div v-if="text2 && this.imageName2" class="reverse">
             <img :src="imageUrl2" alt="Image" class="card-image" />
             <div>
                 <p class="bold-text">{{ $t('seminar[0].fun_fact') }}</p>
-                <p class="italic-text">{{ text2 }}</p>
+                <p class="italic-text">{{ reverseFunFact ? text : text2 }}</p>
             </div>
         </div>
       </div>
@@ -66,6 +66,9 @@
       },
       justifyContent() {
         return this.order === 'imageFirst' ? 'flex-start' : 'flex-end';
+      },
+      reverseFunFact() {
+        return (window.innerWidth > 900) && this.text2 && this.imageName2;
       }
     },
   };
