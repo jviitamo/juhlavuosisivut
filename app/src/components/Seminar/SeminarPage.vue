@@ -8,37 +8,37 @@
         <div class="text-container add-margin">
           <p class="bold-text">{{ $t('seminar[0].content4') }}</p>
         </div>
-        <SpeakerContainer imageName="sonia.svg" order="imageFirst" :text="$t('seminar[0].people_13')">
-          <p class="bold-text center-text">{{ $t('seminar[0].people_11') }}</p>
-          <p class="center-text">{{ $t('seminar[0].people_12') }}</p>
+        <SpeakerContainer imageName="sonia.svg" order="imageFirst" :text="$t('seminar[0].people_14')">
+          <p class="bold-text center-text">{{ $t('seminar[0].people_11') }}<br><em>{{ $t('seminar[0].people_12') }}</em></p>
+          <p class="center-text">{{ $t('seminar[0].people_13') }}</p>
         </SpeakerContainer>
-        <SpeakerContainer imageName="hertta.svg" order="textFirst" :text="$t('seminar[0].people_23')">
-          <p class="bold-text center-text">{{ $t('seminar[0].people_21') }}</p>
-          <p class="center-text">{{ $t('seminar[0].people_221') }}</p>
-          <p class="center-text">{{ $t('seminar[0].people_222') }}</p>
-          <p class="center-text">{{ $t('seminar[0].people_223') }}</p>
+        <SpeakerContainer imageName="hertta.svg" order="textFirst" :text="$t('seminar[0].people_24')">
+          <p class="bold-text center-text">{{ $t('seminar[0].people_21') }}<br><em>{{ $t('seminar[0].people_22') }}</em></p>
+          <p class="center-text">{{ $t('seminar[0].people_231') }}</p>
+          <p class="center-text">{{ $t('seminar[0].people_232') }}</p>
+          <p class="center-text">{{ $t('seminar[0].people_233') }}</p>
         </SpeakerContainer>   
-        <SpeakerContainer imageName="tuomo.svg" order="imageFirst" :text="$t('seminar[0].people_33')">
-          <p class="bold-text center-text">{{ $t('seminar[0].people_31') }}</p>
-          <p class="center-text">{{ $t('seminar[0].people_32') }}</p>
+        <SpeakerContainer imageName="tuomo.svg" order="imageFirst" :text="$t('seminar[0].people_34')">
+          <p class="bold-text center-text">{{ $t('seminar[0].people_31') }}<br><em>{{ $t('seminar[0].people_32') }}</em></p>
+          <p class="center-text">{{ $t('seminar[0].people_33') }}</p>
         </SpeakerContainer>
-        <SpeakerContainer imageName="mia.svg" imageName2="iida.svg" order="textFirst" :text="$t('seminar[0].people_431')" :text2="$t('seminar[0].people_432')">
-          <p class="bold-text center-text">{{ $t('seminar[0].people_41') }}</p>
-          <p class="center-text">{{ $t('seminar[0].people_421') }}</p>
-          <p class="center-text">{{ $t('seminar[0].people_422') }}</p>
-          <p class="center-text">{{ $t('seminar[0].people_423') }}</p>
+        <SpeakerContainer imageName="mia.svg" imageName2="iida.svg" order="textFirst" :text="$t('seminar[0].people_441')" :text2="$t('seminar[0].people_442')">
+          <p class="bold-text center-text">{{ $t('seminar[0].people_41') }}<br><em>{{ $t('seminar[0].people_42') }}</em></p>
+          <p class="center-text">{{ $t('seminar[0].people_431') }}</p>
+          <p class="center-text">{{ $t('seminar[0].people_432') }}</p>
+          <p class="center-text">{{ $t('seminar[0].people_433') }}</p>
         </SpeakerContainer>
-        <SpeakerContainer imageName="risto.svg" order="imageFirst" :text="$t('seminar[0].people_53')">
-          <p class="bold-text center-text">{{ $t('seminar[0].people_51') }}</p>
-          <p class="center-text">{{ $t('seminar[0].people_52') }}</p>
+        <SpeakerContainer imageName="risto.svg" order="imageFirst" :text="$t('seminar[0].people_54')">
+          <p class="bold-text center-text">{{ $t('seminar[0].people_51') }}<br><em>{{ $t('seminar[0].people_52') }}</em></p>
+          <p class="center-text">{{ $t('seminar[0].people_53') }}</p>
         </SpeakerContainer>
-        <SpeakerContainer imageName="ellu.svg" order="textFirst" :text="$t('seminar[0].people_63')">
-          <p class="bold-text center-text">{{ $t('seminar[0].people_61') }}</p>
-          <p class="center-text">{{ $t('seminar[0].people_62') }}</p>
+        <SpeakerContainer imageName="ellu.svg" order="textFirst" :text="$t('seminar[0].people_64')">
+          <p class="bold-text center-text">{{ $t('seminar[0].people_61') }}<br><em>{{ $t('seminar[0].people_62') }}</em></p>
+          <p class="center-text">{{ $t('seminar[0].people_63') }}</p>
         </SpeakerContainer>
-        <SpeakerContainer imageName="tino.svg" order="imageFirst" :text="$t('seminar[0].people_73')">
-          <p class="bold-text center-text">{{ $t('seminar[0].people_71') }}</p>
-          <p class="center-text">{{ $t('seminar[0].people_72') }}</p>
+        <SpeakerContainer imageName="tino.svg" order="imageFirst" :text="$t('seminar[0].people_74')">
+          <p class="bold-text center-text">{{ $t('seminar[0].people_71') }}<br><em>{{ $t('seminar[0].people_72') }}</em></p>
+          <p class="center-text">{{ $t('seminar[0].people_73') }}</p>
         </SpeakerContainer>
     </div>
     </div>
