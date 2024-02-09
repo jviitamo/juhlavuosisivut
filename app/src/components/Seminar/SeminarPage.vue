@@ -16,7 +16,6 @@
           <p class="bold-text center-text">{{ $t('seminar[0].people_21') }}<br><em>{{ $t('seminar[0].people_22') }}</em></p>
           <p class="center-text">{{ $t('seminar[0].people_231') }}</p>
           <p class="center-text">{{ $t('seminar[0].people_232') }}</p>
-          <p class="center-text">{{ $t('seminar[0].people_233') }}</p>
         </SpeakerContainer>   
         <SpeakerContainer imageName="tuomo.svg" order="imageFirst" :text="$t('seminar[0].people_34')">
           <p class="bold-text center-text">{{ $t('seminar[0].people_31') }}<br><em>{{ $t('seminar[0].people_32') }}</em></p>
