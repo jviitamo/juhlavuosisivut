@@ -42,7 +42,10 @@
   ],
   "events_1": [
     {
-      "text": "Ball"
+      "text": "Ball",
+      "information": "By popular demand, Athene is organising an academic dance party during the Spring celebration week! The guild's own dance instructor Elias Pitkänen will first give an instructional session on dance styles, followed by the dance part itself. During the evening we will dance to live music ✨ You don't need to bring your own partner or previous dance experience, just come with an open mind. Tonight everyone dances with the stars!",
+      "location": "Saha, Konemiehentie 1",
+      "date": "13.3."
     },
     {
       "text": "Seminar",
