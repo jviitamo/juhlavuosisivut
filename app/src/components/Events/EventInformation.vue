@@ -57,7 +57,7 @@
       },
       imageName: {
         type: String,
-        default: 'Rectangle.png', // Image name from the assets folder
+        default: 'ruukku_logo.svg', // Image name from the assets folder
       },
       link: {
         type: String,
