@@ -11,7 +11,7 @@
         <div class="text-container">
             <p class="bold-text">{{ $t('seminar[0].content1') }}</p>
             <p class="bold-text">{{ $t('seminar[0].content2') }}</p>
-            <p class="bold-text">{{ $t('seminar[0].content3') }}</p>
+            <p class="bold-text"><a href="https://athene.fi/ilmo/event/421" target="a_blank">{{ $t('seminar[0].content3') }}</a> {{ $t('seminar[0].content4') }}</p>
         </div>
     </div>
 </template>
@@ -47,6 +47,10 @@ img {
 
 .text-smaller {
     font-size: 40px;
+}
+
+a {
+    color: black
 }
 
 @media screen and (max-width: 600px) {

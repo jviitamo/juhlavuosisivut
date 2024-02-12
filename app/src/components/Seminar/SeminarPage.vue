@@ -6,7 +6,7 @@
       <div class="speaker-content">
         <h1 class="main-heading-center add-margin">{{ $t('seminar[0].header5') }}</h1>
         <div class="text-container add-margin">
-          <p class="bold-text">{{ $t('seminar[0].content4') }}</p>
+          <p class="bold-text">{{ $t('seminar[0].content5') }}</p>
         </div>
         <SpeakerContainer imageName="sonia.svg" order="imageFirst" :text="$t('seminar[0].people_14')">
           <p class="bold-text center-text">{{ $t('seminar[0].people_11') }}<br><em>{{ $t('seminar[0].people_12') }}</em></p>
