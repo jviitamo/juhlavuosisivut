@@ -19,7 +19,8 @@
             {{ time }}
           </div>
           <div class="info-box-details-element">
-            <img src="@/assets/icons/location.svg" alt="Image" class="card-icon" />
+            <a v-if="locationLink" :href=locationLink target="a_blank"><img src="@/assets/icons/location.svg" alt="Image" class="card-icon link-icon" /></a>
+            <img v-else src="@/assets/icons/location.svg" alt="Image" class="card-icon" />
             {{ location }}
           </div>
         </div>
@@ -61,6 +62,10 @@
       link: {
         type: String,
         default: '', // Image name from the assets folder
+      },
+      locationLink: {
+        type: String,
+        default: '',
       }
     },
     computed: {
@@ -179,5 +184,8 @@
   padding: 0 20px;
 }
 
+.link-icon:hover {
+  opacity: 0.7;
+}
 
   </style>

@@ -37,7 +37,8 @@
       "date": "8.1.",
       "time": "9.00-11.30",
       "imageName": "brunch.jpg",
-      "link": "https://athene.fi/ilmo/event/413"
+      "link": "https://athene.fi/ilmo/event/413",
+      "locationLink": "https://maps.app.goo.gl/WsABpJWrYAHJWgAL7"
     }
   ],
   "events_1": [
@@ -45,7 +46,8 @@
       "text": "Ball",
       "information": "By popular demand, Athene is organising an academic dance party during the Spring celebration week! The guild's own dance instructor Elias Pitkänen will first give an instructional session on dance styles, followed by the dance part itself. During the evening we will dance to live music ✨ You don't need to bring your own partner or previous dance experience, just come with an open mind. Tonight everyone dances with the stars!",
       "location": "Saha, Konemiehentie 1",
-      "date": "13.3."
+      "date": "13.3.",
+      "locationLink": "https://maps.app.goo.gl/gkDBnoMbvDMvYoPR6"
     },
     {
       "text": "Seminar",
@@ -54,7 +56,8 @@
       "date": "15.3.",
       "time": "14.00-",
       "imageName": "ruukku_logo.svg",
-      "link": "https://xxv.athene.fi/en/seminar"
+      "link": "https://xxv.athene.fi/en/seminar",
+      "locationLink": "https://maps.app.goo.gl/SB3dhaRksrF18Lq69"
     }
   ],
   "events_2": [

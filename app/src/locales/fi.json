@@ -37,7 +37,8 @@
       "date": "8.1.",
       "time": "9.00-11.30",
       "imageName": "brunch.jpg",
-      "link": "https://athene.fi/ilmo/event/413"
+      "link": "https://athene.fi/ilmo/event/413",
+      "locationLink": "https://maps.app.goo.gl/WsABpJWrYAHJWgAL7"
     }
   ],
   "events_1": [
@@ -45,7 +46,8 @@
       "text": "Tanssiaiset",
       "information": "Yleisön suuresta toiveesta Athene järjestää kevään juhlaviikolla akateemiset tanssiaiset! Killan oma tanssitaituri Elias Pitkänen pitää ensin opetussession tanssilajeista, jonka jälkeen siirrytään itse tanssiosuuteen. Illan aikana tanssitaan livemusiikin tahtiin ✨ Tanssiaisiin et tarvitse mukaan omaa paria tai edeltävää tanssikokemusta, vaan riittää, että tulet avoimin mielin mukaan. Tänä iltana kaikki tanssii tähtien kanssa!",
       "location": "Saha, Konemiehentie 1",
-      "date": "13.3."
+      "date": "13.3.",
+      "locationLink": "https://maps.app.goo.gl/gkDBnoMbvDMvYoPR6"
     },
     {
       "text": "Seminaari",
@@ -54,7 +56,8 @@
       "date": "15.3.",
       "time": "14.00-",
       "imageName": "ruukku_logo.svg",
-      "link": "https://xxv.athene.fi/fi/seminar"
+      "link": "https://xxv.athene.fi/fi/seminar",
+      "locationLink": "https://maps.app.goo.gl/SB3dhaRksrF18Lq69"
     }
   ],
   "events_2": [

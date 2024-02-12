@@ -21,6 +21,7 @@
                     :time=message.time
                     :imageName=message.imageName
                     :link=message.link
+                    :locationLink=message.locationLink
                 />
             </div>
             <div>     
@@ -34,6 +35,7 @@
                     :time=message.time
                     :imageName=message.imageName
                     :link=message.link
+                    :locationLink=message.locationLink
                 />
             </div>
             <div class="add-margin-top">     
@@ -46,6 +48,7 @@
                     :time=message.time
                     :imageName=message.imageName
                     :link=message.link
+                    :locationLink=message.locationLink
                 />
             </div>
             <div>         
@@ -59,6 +62,7 @@
                     :time=message.time
                     :imageName=message.imageName
                     :link=message.link
+                    :locationLink=message.locationLink
                 />
             </div>        
         </div>
