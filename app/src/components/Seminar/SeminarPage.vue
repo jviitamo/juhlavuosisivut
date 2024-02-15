@@ -1,9 +1,17 @@
 <!-- MainBody.vue -->
 
 <template>
-    <div class="main-body-container text-black">
+    <div class="seminar-navigation-container">
+      <a class="navigation-button" @click="scrollMeTo('about_the_speakers')">ABOUT THE SPEAKERS</a>
+      <a class="navigation-button" @click="scrollMeTo('schedule')">SCHEDULE</a>
+      <a class="navigation-button" @click="scrollMeTo('general')">GENERAL</a>
+    </div>
+    <div class="main-body-container text-black" ref="general">
       <HeaderContainer />
-      <div class="speaker-content">
+      <div ref="schedule">
+        <ScheduleContainer/>
+      </div>
+      <div class="speaker-content" ref="about_the_speakers">
         <h1 class="main-heading-center add-margin">{{ $t('seminar[0].header5') }}</h1>
         <div class="text-container add-margin">
           <p class="bold-text">{{ $t('seminar[0].content5') }}</p>
@@ -47,18 +55,47 @@
 
   import HeaderContainer from '@/components/Seminar/HeaderContainer.vue';
   import SpeakerContainer from '@/components/Seminar/SpeakerContainer.vue';
+  import ScheduleContainer from '@/components/Seminar/ScheduleContainer.vue';
 
   export default {
     name: 'SeminarPage',
     components: {
       HeaderContainer,
-      SpeakerContainer
-    }
+      SpeakerContainer,
+      ScheduleContainer
+    },
+    data() {
+      return {
+        currentComponent: ""
+      }
+    },
+    mounted() {
+      window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeUnmount() {
+      window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+      scrollMeTo(refName) {
+        var element = this.$refs[refName];
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+  } 
   };
 </script>
 
 <style scoped>
 
+.seminar-navigation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transform: rotate(270deg);
+  position: fixed;
+  width: 300px;
+  top: 400px;
+  left: -130px;
+}
 .text-black {
   color: #000000;
 }
