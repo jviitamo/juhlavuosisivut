@@ -123,6 +123,7 @@
 
   .seminar-navigation-container {
     justify-content: space-evenly;
+    left: -140px;
   }
 }
 
