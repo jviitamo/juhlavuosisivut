@@ -78,7 +78,11 @@
     methods: {
       scrollMeTo(refName) {
         var element = this.$refs[refName];
-        element.scrollIntoView({ behavior: 'smooth' });
+        let dims = element.getBoundingClientRect();
+        window.scrollTo({
+          top: dims.top - 150 + window.scrollY,
+          behavior: "smooth"
+        });
       }
   } 
   };
