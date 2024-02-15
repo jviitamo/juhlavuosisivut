@@ -116,6 +116,14 @@
   .add-margin {
     margin-bottom: 30px;
   }
+
+  .navigation-button {
+    font-size: 10px;
+  }
+
+  .seminar-navigation-container {
+    justify-content: space-evenly;
+  }
 }
 
 </style>
