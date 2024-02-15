@@ -46,8 +46,8 @@ img {
 
 @media screen and (max-width: 600px) {
     img {
-        height: 150px;
-        margin-top: -10px;
+        height: 170px;
+        margin-top: 20px;
     }
 
     .add-margin {
