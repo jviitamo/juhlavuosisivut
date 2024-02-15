@@ -107,6 +107,11 @@
   text-align: center; /* Center text horizontally */
 }
 
+.navigation-button:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 600px) {
   .add-margin {
     margin-bottom: 30px;
