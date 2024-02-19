@@ -2,9 +2,9 @@
 
 <template>
     <div class="seminar-navigation-container">
-      <a class="navigation-button" @click="scrollMeTo('about_the_speakers')">ABOUT THE SPEAKERS</a>
-      <a class="navigation-button" @click="scrollMeTo('schedule')">SCHEDULE</a>
-      <a class="navigation-button" @click="scrollMeTo('general')">GENERAL</a>
+      <a class="navigation-button" :style="[this.currentComponent  === 'speakers' ? 'font-weight: bold' : '']" @click="scrollMeTo('about_the_speakers')">ABOUT THE SPEAKERS</a>
+      <a class="navigation-button" :style="[this.currentComponent  === 'schedule' ? 'font-weight: bold' : '']" @click="scrollMeTo('schedule')">SCHEDULE</a>
+      <a class="navigation-button" :style="[this.currentComponent  === 'general' ? 'font-weight: bold' : '']" @click="scrollMeTo('general')">GENERAL</a>
     </div>
     <div class="main-body-container text-black" ref="general">
       <HeaderContainer />
@@ -70,6 +70,7 @@
       }
     },
     mounted() {
+      this.handleScroll()
       window.addEventListener('scroll', this.handleScroll);
     },
     beforeUnmount() {
@@ -80,11 +81,23 @@
         var element = this.$refs[refName];
         let dims = element.getBoundingClientRect();
         window.scrollTo({
-          top: dims.top - 150 + window.scrollY,
+          top: dims.top - 100 + window.scrollY,
           behavior: "smooth"
         });
+      },
+      handleScroll() {
+        const scheduleElement = this.$refs.schedule.getBoundingClientRect();
+        const speakersElement = this.$refs.about_the_speakers.getBoundingClientRect();
+
+        let chosen = ""
+
+        if (speakersElement.top - 110 <= 0) chosen = "speakers"
+        else if (scheduleElement.top - 110 <= 0) chosen = "schedule"
+        else chosen = "general"
+
+        this.currentComponent = chosen
       }
-  } 
+    } 
   };
 </script>
 
@@ -113,7 +126,7 @@
 
 .navigation-button:hover {
   cursor: pointer;
-  font-weight: bold;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 600px) {
