@@ -117,6 +117,7 @@
 
 .image-content {
   margin: auto;
+  padding-top: 30px;
 }
 .card-image {
   max-width: 100%;
