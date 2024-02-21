@@ -24,7 +24,7 @@
             {{ location }}
           </div>
         </div>
-        <p v-if="information">{{ information }}</p>
+        <p v-if="information" v-html="information"></p>
         <p v-else>{{ $t('event_headers[0].more_info') }}</p>
         <a v-if="link" class="link" :href="link" target="_blank">{{ $t('event_headers[0].link_button') }}</a>
       </div>
