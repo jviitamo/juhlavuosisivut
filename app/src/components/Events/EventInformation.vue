@@ -116,7 +116,6 @@
 }
 
 .image-content {
-  padding: 30px;
   margin: auto;
 }
 .card-image {
