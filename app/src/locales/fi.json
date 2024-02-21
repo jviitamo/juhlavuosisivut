@@ -43,15 +43,21 @@
   ],
   "events_1": [
     {
-      "text": "Maistelutapahtuma",
-      "date": "11.3."
+      "text": "Oliivi- ja oliiviöljymaistelu",
+      "information": "Tiesitkö, et porukka joka vetää paljon oliiviöljyä elää 10 vuotta muita pidempään? (vähintään!!) Ootko maistanut sun Pirkka ekstra-neitsytoliiviöljyä sellasenaan, tiiätkö miten se on tehty ja miten se vertautuu muihin öljyihin? Nyt pääset testaamaan muutamaa hiton laadukasta (ja kallista) oliiviöljyä sekä oliiveja niiden takana – ihan vaan saapumalla paikalle. Listalla on mm. öljy Stefanon isovanhempien pihan oliiveista Bresciasta. Eri öljyistä löytyy yllättävän erilaisia hedelmäisiä, yrttisiä ja pippurisia makuprofiileja. Päästään myös kokemaan mikä tekee ekstraneitsytoliiviöljystä niin spessun. Tarjolla on leipää oliivien ja öljyjen kumppanina, mutta suurempi nälkä kannattaa sammuttaa omatoimisesti ennen maistelua.",
+      "date": "11.3.",
+      "time": "18.00-",
+      "location": "Otarannan kerhotila",
+      "locationLink": "https://maps.app.goo.gl/drc9fh28s6s9WpXw7",
+      "imageName": "maistelu.svg"
     },
     {
-      "text": "Tanssiaiset",
+      "text": "Tanssit",
       "information": "Yleisön suuresta toiveesta Athene järjestää kevään juhlaviikolla akateemiset tanssiaiset! Killan oma tanssitaituri Elias Pitkänen pitää ensin opetussession tanssilajeista, jonka jälkeen siirrytään itse tanssiosuuteen. Illan aikana tanssitaan livemusiikin tahtiin ✨ Tanssiaisiin et tarvitse mukaan omaa paria tai edeltävää tanssikokemusta, vaan riittää, että tulet avoimin mielin mukaan. Tänä iltana kaikki tanssii tähtien kanssa!",
       "location": "Saha, Konemiehentie 1",
       "date": "13.3.",
-      "locationLink": "https://maps.app.goo.gl/gkDBnoMbvDMvYoPR6"
+      "locationLink": "https://maps.app.goo.gl/gkDBnoMbvDMvYoPR6",
+      "imageName": "tanssit.svg"
     },
     {
       "text": "Seminaari",

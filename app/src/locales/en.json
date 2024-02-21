@@ -43,15 +43,21 @@
   ],
   "events_1": [
     {
-      "text": "Tasting event",
-      "date": "11.3."
+      "text": "Olive and olive oil tasting",
+      "information": "Did you know that people who use a lot of olive oil live 10 years longer than others? (at least!!) Have you tasted your Pirkka extra virgin olive oil as such, do you know how it is made and how it compares to other oils? Now you can try out some great quality olive oils and the olives behind them - just by turning up. The list includes, among others, an oil from Stefano's grandparents' olive grove in Brescia. The different oils have a surprisingly wide range of fruity, herbal and peppery flavour profiles. We also get to experience what makes extra virgin olive oil so special. Bread will be served to accompany the olives and oils, but it is advisable to satisfy any bigger appetite before tasting.",
+      "date": "11.3.",
+      "time": "18.00-",
+      "location": "Otaranta Clubroom",
+      "locationLink": "https://maps.app.goo.gl/drc9fh28s6s9WpXw7",
+      "imageName": "maistelu.svg"
     },
     {
-      "text": "Ball",
+      "text": "Dance",
       "information": "By popular demand, Athene is organising an academic dance party during the Spring celebration week! The guild's own dance instructor Elias Pitkänen will first give an instructional session on dance styles, followed by the dance part itself. During the evening we will dance to live music ✨ You don't need to bring your own partner or previous dance experience, just come with an open mind. Tonight everyone dances with the stars!",
       "location": "Saha, Konemiehentie 1",
       "date": "13.3.",
-      "locationLink": "https://maps.app.goo.gl/gkDBnoMbvDMvYoPR6"
+      "locationLink": "https://maps.app.goo.gl/gkDBnoMbvDMvYoPR6",
+      "imageName": "tanssit.svg"
     },
     {
       "text": "Seminar",
