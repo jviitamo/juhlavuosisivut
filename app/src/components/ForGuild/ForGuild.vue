@@ -13,12 +13,13 @@
   </div>
 </template>
   
-  <script>
-  
-  export default {
-    name: 'ForGuild'
-  };
-  </script>
+<script>
+
+export default {
+  name: 'ForGuild'
+};
+
+</script>
 
 <style scoped>
 /* Add your custom styles for MainBody here */
