@@ -17,12 +17,11 @@
 <script>
 
 export default {
-name: 'ScheduleContainer'
+    name: 'ScheduleContainer'
 };
 </script>
 
 <style scoped>
-
 
 .schedule-container {
     display: flex;

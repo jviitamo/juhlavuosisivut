@@ -16,9 +16,7 @@
   <script>
   
   export default {
-    name: 'ForGuild',
-    components: {
-    }
+    name: 'ForGuild'
   };
   </script>
 

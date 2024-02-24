@@ -20,6 +20,14 @@
       "annual_ball_header": "INFOÄHKY XXV"
     }
   ],
+  "footer": [
+    {
+      "text1": "https://athene.fi",
+      "text2": "athene.fi",
+      "text3": "#athene25",
+      "text4": "#athenehommat"
+    }
+  ],
   "event_headers": [
     {
       "header_1": "JUBILEE EVENTS",

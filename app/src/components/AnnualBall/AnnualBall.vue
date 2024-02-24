@@ -12,8 +12,6 @@
   <script>
   
   export default {
-    name: 'AnnualBall',
-    components: {
-    }
+    name: 'AnnualBall'
   };
   </script>

@@ -1,9 +1,9 @@
 <template>
   <footer class="footer">
-    <div class="content has-text-centered">
+    <div class="content">
       <p> 
-        <a href="https://athene.fi" target="a_blank">athene.fi</a> 
-        #athene25 #athenehommat
+        <a :href="$t('footer[0].text1')" target="a_blank">{{ $t('footer[0].text2') }}</a> 
+        {{ $t('footer[0].text3') }} {{ $t('footer[0].text4') }}
       </p>
     </div>
   </footer>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'MyFooter',
+  name: 'MyFooter'
 };
 </script>
 

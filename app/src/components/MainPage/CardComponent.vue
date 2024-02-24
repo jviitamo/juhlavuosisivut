@@ -21,20 +21,12 @@
       },
       imageName: {
         type: String,
-        default: '', // Image name from the assets folder
+        default: ''
       },
       order: {
         type: String,
-        default: 'textFirst', // 'textFirst' or 'imageFirst'
-      },
-      textSize: {
-        type: String,
-        default: '16px', // Default text size
-      },
-      isBold: {
-        type: Boolean,
-        default: false, // Default to non-bold text
-      },
+        default: 'textFirst'
+      }
     },
     computed: {
       imageUrl() {

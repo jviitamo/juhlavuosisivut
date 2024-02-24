@@ -87,7 +87,6 @@
   </script>
   
   <style scoped>
-  /* Add your custom styles for MainBody here */
   
 .main-body-container-events {
     padding: 4rem 1rem;

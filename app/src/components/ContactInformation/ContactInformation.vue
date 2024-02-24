@@ -29,7 +29,6 @@ import BoxComponent from '@/components/ContactInformation/BoxComponent.vue';
     methods: {
       getContacts(key) {
           const messages = this.$i18n.messages[this.$i18n.locale] || {};
-          console.log(messages)
           return messages[key] || [];
       },
     }
@@ -41,10 +40,8 @@ import BoxComponent from '@/components/ContactInformation/BoxComponent.vue';
     width: 100%;
     margin: 50px 0;
     display: flex;
-    flex-wrap: wrap; /* Allows boxes to wrap to the next row */
-    justify-content: flex-start; /* Distributes space between boxes */
-  
-    /* Additional styling as needed */
+    flex-wrap: wrap; 
+    justify-content: flex-start;  
   }
 
   @media screen and (max-width: 900px) {
@@ -53,7 +50,5 @@ import BoxComponent from '@/components/ContactInformation/BoxComponent.vue';
     }
   }
 
-  
-  /* Additional styling for the boxes */
-</style>
+  </style>
   
