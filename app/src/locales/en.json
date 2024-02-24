@@ -6,7 +6,8 @@
       "main_page_3": "In honor of the jubilee, numerous events and activities will be organized for both guild members and the entire Otaniemi community. The celebratory year culminates in November / December with Infoähky!",
       "main_page_4": "Join us",
       "main_page_5": "in making this jubilee memorable!",
-      "main_page_6": "JOIN US IN MAKING THIS JUBILEE"
+      "main_page_6": "JOIN US IN MAKING THIS JUBILEE",
+      "main_header": "ATHENE 25"
     }
   ],
   "nav_bar": [
@@ -119,6 +120,9 @@
       "header4": "15.3.2024",
       "header5": "ABOUT THE SPEAKERS",
       "header6": "SCHEDULE",
+      "navigation_about_speakers": "ABOUT THE SPEAKERS",
+      "navigation_schedule": "SCHEDULE",
+      "navigation_general": "GENERAL",
       "schedule1": "13.00 Coffee at Dipoli",
       "schedule2": "14.00 – 17.00 Seminar",
       "schedule3": "17.30 – Afterparty at OLOhuone",

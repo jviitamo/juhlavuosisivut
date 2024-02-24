@@ -2,9 +2,9 @@
 
 <template>
     <div class="seminar-navigation-container">
-      <a class="navigation-button" :style="[this.currentComponent  === 'speakers' ? 'font-weight: bold' : '']" @click="scrollMeTo('about_the_speakers')">ABOUT THE SPEAKERS</a>
-      <a class="navigation-button" :style="[this.currentComponent  === 'schedule' ? 'font-weight: bold' : '']" @click="scrollMeTo('schedule')">SCHEDULE</a>
-      <a class="navigation-button" :style="[this.currentComponent  === 'general' ? 'font-weight: bold' : '']" @click="scrollMeTo('general')">GENERAL</a>
+      <a class="navigation-button" :style="[this.currentComponent  === 'speakers' ? 'font-weight: bold' : '']" @click="scrollMeTo('about_the_speakers')">{{ $t('seminar[0].navigation_about_speakers') }}</a>
+      <a class="navigation-button" :style="[this.currentComponent  === 'schedule' ? 'font-weight: bold' : '']" @click="scrollMeTo('schedule')">{{ $t('seminar[0].navigation_schedule') }}</a>
+      <a class="navigation-button" :style="[this.currentComponent  === 'general' ? 'font-weight: bold' : '']" @click="scrollMeTo('general')">{{ $t('seminar[0].navigation_general') }}</a>
     </div>
     <div class="main-body-container text-black" ref="general">
       <HeaderContainer />

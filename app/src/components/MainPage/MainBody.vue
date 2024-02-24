@@ -4,7 +4,7 @@
   <div class="main-body-container">
     <CardComponent imageName="ruukku_logo.svg" order="textFirst">
       <div>
-        <h1 class="main-heading">ATHENE 25</h1>
+        <h1 class="main-heading">{{ $t('main_page[0].main_header') }}</h1>
         <p class="bold-header">{{ $t('main_page[0].main_page_1') }}</p>
       </div>
     </CardComponent>
