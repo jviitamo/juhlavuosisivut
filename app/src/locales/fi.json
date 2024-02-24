@@ -98,13 +98,67 @@
   ],
   "contact": [
     {
-      "responsible": "Athene 25 tirehtööri",
-      "companies": "Yrityssuhteet",
-      "events": "Tapahtumat",
-      "graphics": "Grafiikat ja tapahtumat",
-      "communication": "Grafiikat ja viestintä",
-      "seminar": "Seminaari",
-      "web": "Nettisivut"
+      "name": "Julia Sippala",
+      "email": "julia.sippala@aalto.fi",
+      "photoUrl": "julia.jpg",
+      "telegram": "@soppala",
+      "title": "Athene 25 tirehtööri"
+    },
+    {
+      "name": "Antti Kari-Koskinen",
+      "email": "antti.kari-koskinen@aalto.fi",
+      "photoUrl": "antti.jpg",
+      "telegram": "@teekkarikoskinen",
+      "title": "Yrityssuhteet"
+    },
+    {
+      "name": "Aarne Talvela",
+      "email": "aarne.talvela@aalto.fi",
+      "photoUrl": "aarne.jpg",
+      "telegram": "@aarnetalvela",
+      "title": "Tapahtumat"
+    },
+    {
+      "name": "Nea Nieminen",
+      "email": "nea.nieminen@aalto.fi",
+      "photoUrl": "nea.jpg",
+      "telegram": "@poromuija",
+      "title": "Tapahtumat"
+    },
+    {
+      "name": "Elina Ståhlberg",
+      "email": "elina.stahlberg@aalto.fi",
+      "photoUrl": "ellu.jpg",
+      "telegram": "@stahlbergg",
+      "title": "Grafiikat ja tapahtumat"
+    },
+    {
+      "name": "Iida Lehikoinen",
+      "email": "iida.lehikoinen@aalto.fi",
+      "photoUrl": "iida.png",
+      "telegram": "@iidalehikoinen",
+      "title": "Grafiikat ja viestintä"
+    },
+    {
+      "name": "Inkeri Nora",
+      "email": "inkeri.nora@aalto.fi",
+      "photoUrl": "inkeri.jpg",
+      "telegram": "@inkuri",
+      "title": "Seminaari"
+    },
+    {
+      "name": "Niklas Koskela",
+      "email": "niklas.koskela@aalto.fi",
+      "photoUrl": "niklas.jpg",
+      "telegram": "@Viestintapaallikko",
+      "title": "Seminaari"
+    },
+    {
+      "name": "Juhana Viitamo",
+      "email": "juhana.viitamo@aalto.fi",
+      "photoUrl": "juhana.jpg",
+      "telegram": "@juhanaviitamo",
+      "title": "Nettisivut"
     }
   ],
   "ball": [

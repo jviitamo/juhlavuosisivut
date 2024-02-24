@@ -98,13 +98,67 @@
   ],
   "contact": [
     {
-      "responsible": "Athene 25 director",
-      "companies": "Coprorate relations",
-      "events": "Events",
-      "graphics": "Events and graphics",
-      "communication": "Events and communications",
-      "seminar": "Seminar",
-      "web": "Web site"
+      "name": "Julia Sippala",
+      "email": "julia.sippala@aalto.fi",
+      "photoUrl": "julia.jpg",
+      "telegram": "@soppala",
+      "title": "Athene 25 director"
+    },
+    {
+      "name": "Antti Kari-Koskinen",
+      "email": "antti.kari-koskinen@aalto.fi",
+      "photoUrl": "antti.jpg",
+      "telegram": "@teekkarikoskinen",
+      "title": "Coprorate relations"
+    },
+    {
+      "name": "Aarne Talvela",
+      "email": "aarne.talvela@aalto.fi",
+      "photoUrl": "aarne.jpg",
+      "telegram": "@aarnetalvela",
+      "title": "Events"
+    },
+    {
+      "name": "Nea Nieminen",
+      "email": "nea.nieminen@aalto.fi",
+      "photoUrl": "nea.jpg",
+      "telegram": "@poromuija",
+      "title": "Events"
+    },
+    {
+      "name": "Elina Ståhlberg",
+      "email": "elina.stahlberg@aalto.fi",
+      "photoUrl": "ellu.jpg",
+      "telegram": "@stahlbergg",
+      "title": "Events and graphics"
+    },
+    {
+      "name": "Iida Lehikoinen",
+      "email": "iida.lehikoinen@aalto.fi",
+      "photoUrl": "iida.png",
+      "telegram": "@iidalehikoinen",
+      "title": "Graphics and communications"
+    },
+    {
+      "name": "Inkeri Nora",
+      "email": "inkeri.nora@aalto.fi",
+      "photoUrl": "inkeri.jpg",
+      "telegram": "@inkuri",
+      "title": "Seminar"
+    },
+    {
+      "name": "Niklas Koskela",
+      "email": "niklas.koskela@aalto.fi",
+      "photoUrl": "niklas.jpg",
+      "telegram": "@Viestintapaallikko",
+      "title": "Seminar"
+    },
+    {
+      "name": "Juhana Viitamo",
+      "email": "juhana.viitamo@aalto.fi",
+      "photoUrl": "juhana.jpg",
+      "telegram": "@juhanaviitamo",
+      "title": "Website"
     }
   ],
   "ball": [
