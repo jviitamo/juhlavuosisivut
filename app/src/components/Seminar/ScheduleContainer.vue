@@ -7,6 +7,7 @@
                 <p class="bold-text">{{ $t('seminar[0].schedule1') }}</p>
                 <p class="bold-text">{{ $t('seminar[0].schedule2') }}</p>
                 <p class="bold-text">{{ $t('seminar[0].schedule3') }}</p>
+                <p class="italic-text">{{ $t('seminar[0].schedule31') }}</p>
                 <p class="bold-text">{{ $t('seminar[0].schedule4') }}</p>
             </div>
             <img src="@/assets/ruusu.svg" alt="Logo" />
@@ -43,6 +44,11 @@ img {
     margin-bottom: 70px;
 }
 
+.italic-text {
+    margin: -20px 90px 10px;
+    font-style: italic;
+}
+
 @media screen and (max-width: 600px) {
     img {
         height: 170px;
@@ -52,6 +58,12 @@ img {
     .add-margin {
         margin-bottom: 40px;
     }
+
+    .italic-text {
+        margin: -20px 60px 10px;
+        font-style: italic;
+    }
+
 }
 
 </style>
