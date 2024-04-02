@@ -38,7 +38,8 @@
                     :locationLink=message.locationLink
                 />
             </div>
-            <div class="add-margin-top">     
+            <div>  
+                <h2>{{ $t('event_headers[0].header_5') }}</h2>      
                 <EventInformation
                     v-for="(message, key) in getEvents('events_2')" :key="key"
                     :text=message.text

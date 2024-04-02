@@ -34,6 +34,7 @@
       "header_2": "Täältä löydät kaikki juhlavuoden tapahtumat",
       "header_3": "Kevään juhlaviikko",
       "header_4": "Vuosijuhlaviikko",
+      "header_5": "Wappu",
       "link_button": "Lisää infoa",
       "more_info": "Lisää tietoa tulossa myöhemmin"
     }
@@ -82,6 +83,15 @@
     }
   ],
   "events_2": [
+    {
+      "text": "Temppelinrakennuspäivä",
+      "information": "🏛TEMPPELINRAKENNUSPÄIVÄ🏛<br><br>Athene 25 -vuotta vietetään lukuisin juhlallisin, antiikista inspiroitunein menoin. Mikä olisikaan antiikin Kreikka tai Athenen juhlavuosi ilman temppeliä?<br><br>Tule siis rakentamaan killalle omaa Parthenonia maanantaina 22.4. 12-17 välillä Alvarin aukiolle. Kaikki tiet vievät Roomaan, mutta temppeliltä Smökkiin wappusitseille!",
+      "location": " Alvarin aukio",
+      "date": "22.4.",
+      "time": "12.00-17.00",
+      "imageName": "temple.jpg",
+      "locationLink": "https://maps.app.goo.gl/ug1yuyr728qSggcp7"
+    },
     {
       "text": "Megakaljakroke",
       "date": "27.4."
