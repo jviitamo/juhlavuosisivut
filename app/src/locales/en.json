@@ -94,7 +94,13 @@
     },
     {
       "text": "Mega beer croquette",
-      "date": "27.4."
+      "information": "Wappu on kohta täällä, mikä voi tarkoittaa vain yhtä asiaa. Kaljakroketti, tuo urheilulajeista jaloin, tulee taas – tänä vuonna Athenen 25. juhlavuoden kunniaksi MEGAkaljakrokettina!",
+      "date": "27.4.",
+      "location": " Alvarin aukio",
+      "time": "16.30-20.00",
+      "imageName": "kaljakroketti.png",
+      "link": "https://kaljakroketti.netlify.app/",
+      "locationLink": "https://maps.app.goo.gl/ug1yuyr728qSggcp7"
     }
   ],
   "events_3": [
