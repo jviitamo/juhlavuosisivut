@@ -84,15 +84,6 @@
   ],
   "events_2": [
     {
-      "text": "Temple building day",
-      "information": "🏛TEMPLE BUILDING DAY🏛<br><br>The 25th anniversary of Athene is celebrated with a number of festive, ancient Greece -inspired events. What would be ancient Greece or Athene without a temple? <br><br>Come and build our own Parthenon on Monday 22 April between 12 and 17 at Alvari square. All roads lead to Rome, but the road from our temple leads to Smökki for the wappusits!",
-      "location": " Alvari square",
-      "date": "9.5.",
-      "time": "12.00-17.00",
-      "imageName": "temple.jpg",
-      "locationLink": "https://maps.app.goo.gl/ug1yuyr728qSggcp7"
-    },
-    {
       "text": "Mega beer croquette",
       "information": "Wappu on kohta täällä, mikä voi tarkoittaa vain yhtä asiaa. Kaljakroketti, tuo urheilulajeista jaloin, tulee taas – tänä vuonna Athenen 25. juhlavuoden kunniaksi MEGAkaljakrokettina!",
       "date": "27.4.",
@@ -100,6 +91,15 @@
       "time": "16.30-20.00",
       "imageName": "kaljakroketti.png",
       "link": "https://kaljakroketti.netlify.app/",
+      "locationLink": "https://maps.app.goo.gl/ug1yuyr728qSggcp7"
+    },
+    {
+      "text": "Temple building day",
+      "information": "🏛TEMPLE BUILDING DAY🏛<br><br>The 25th anniversary of Athene is celebrated with a number of festive, ancient Greece -inspired events. What would be ancient Greece or Athene without a temple? <br><br>Come and build our own Parthenon on Monday 22 April between 12 and 17 at Alvari square. All roads lead to Rome, but the road from our temple leads to Smökki for the wappusits!",
+      "location": " Alvari square",
+      "date": "9.5.",
+      "time": "12.00-17.00",
+      "imageName": "temple.jpg",
       "locationLink": "https://maps.app.goo.gl/ug1yuyr728qSggcp7"
     }
   ],

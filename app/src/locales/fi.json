@@ -84,15 +84,6 @@
   ],
   "events_2": [
     {
-      "text": "Temppelinrakennuspäivä",
-      "information": "🏛TEMPPELINRAKENNUSPÄIVÄ🏛<br><br>Athene 25 -vuotta vietetään lukuisin juhlallisin, antiikista inspiroitunein menoin. Mikä olisikaan antiikin Kreikka tai Athenen juhlavuosi ilman temppeliä?<br><br>Tule siis rakentamaan killalle omaa Parthenonia maanantaina 22.4. 12-17 välillä Alvarin aukiolle. Kaikki tiet vievät Roomaan, mutta temppeliltä Smökkiin wappusitseille!",
-      "location": " Alvarin aukio",
-      "date": "9.5.",
-      "time": "12.00-17.00",
-      "imageName": "temple.jpg",
-      "locationLink": "https://maps.app.goo.gl/ug1yuyr728qSggcp7"
-    },
-    {
       "text": "Megakaljakroke",
       "information": "Wappu on kohta täällä, mikä voi tarkoittaa vain yhtä asiaa. Kaljakroketti, tuo urheilulajeista jaloin, tulee taas – tänä vuonna Athenen 25. juhlavuoden kunniaksi MEGAkaljakrokettina!",
       "date": "27.4.",
@@ -100,6 +91,15 @@
       "time": "16.30-20.00",
       "imageName": "kaljakroketti.png",
       "link": "https://kaljakroketti.netlify.app/",
+      "locationLink": "https://maps.app.goo.gl/ug1yuyr728qSggcp7"
+    },
+    {
+      "text": "Temppelinrakennuspäivä",
+      "information": "🏛TEMPPELINRAKENNUSPÄIVÄ🏛<br><br>Athene 25 -vuotta vietetään lukuisin juhlallisin, antiikista inspiroitunein menoin. Mikä olisikaan antiikin Kreikka tai Athenen juhlavuosi ilman temppeliä?<br><br>Tule siis rakentamaan killalle omaa Parthenonia maanantaina 22.4. 12-17 välillä Alvarin aukiolle. Kaikki tiet vievät Roomaan, mutta temppeliltä Smökkiin wappusitseille!",
+      "location": " Alvarin aukio",
+      "date": "9.5.",
+      "time": "12.00-17.00",
+      "imageName": "temple.jpg",
       "locationLink": "https://maps.app.goo.gl/ug1yuyr728qSggcp7"
     }
   ],
