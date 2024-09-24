@@ -105,11 +105,18 @@
   ],
   "events_3": [
     {
-      "text": "Vujuviikon bileet"
+      "text": "Vujuviikon bileet",
+      "date": "12.11."
     },
     {
       "text": "Infoähky",
-      "date": "15.11."
+      "information": "Tervetuloa Infoähkyyn perjantaina 15. marraskuuta 2024 juhlistamaan 25-vuotiasta Informaatioverkostojen kilta Athenea.<br><br>Juhlat alkavat cocktail-tilaisuudella kello 15.00 Aalto-yliopiston Kandidaattikeskuksen A-siivessä (Otakaari 1, X-ovi). Cocktail-tilaisuudesta siirrytään bussikuljetuksilla pääjuhlaosuuteen Itäiseen Satamakaupunkiin, Ison Kirkon kupeeseen Valkoiseen Saliin (Aleksanterinkatu 16-18). Pääjuhlan jälkeen ilta jatkuu salaisessa jatkopaikassa X.<br><br>Seuraavana aamuna juhlavierailla on mahdollisuus rentoutua Purkusessiossa, joka järjestetään Otaniemen Servin Mökissä (Jämerantaival 4) kello 12.00 alkaen.",
+      "date": "15.11.",
+      "time": "15:00-",
+      "location": "Valkoinen sali",
+      "imageName": "ball.png",
+      "link": "https://xxv.athene.fi/fi/infoahky",
+      "locationLink": "https://g.co/kgs/xnQmFBa"
     },
     {
       "text": "Purkusessio",

@@ -105,11 +105,18 @@
   ],
   "events_3": [
     {
-      "text": "Annual ball week party"
+      "text": "Annual ball week party",
+      "date": "12.11."
     },
     {
       "text": "Infoähky",
-      "date": "15.11."
+      "information": "We welcome you to Infoähky on the 15th of November 2024 to celebrate the 25-year-old Information Networks guild Athene.<br><br>The celebration starts with a cocktail event at 15:00 in the A-wing of the Undergraduate Center (Otakaari 1, X-door). After the cocktail event, buses will transport the festive crowd to the academic table party, which takes place in the “White Hall” (Aleksanterinkatu 16-18, Helsinki), from 18:30 onwards. After the academic table party, the night continues at a secret afterparty location X.<br><br>The next morning guests have a chance to relax at the Purkusessio sillis, which is held in Otaniemi, at Smökki (Jämeräntaival 4) from 12 pm onwards.",
+      "date": "15.11.",
+      "time": "15:00-",
+      "location": "Valkoinen sali",
+      "imageName": "ball.png",
+      "link": "https://xxv.athene.fi/fi/infoahky",
+      "locationLink": "https://g.co/kgs/xnQmFBa"
     },
     {
       "text": "Purkusessio",
