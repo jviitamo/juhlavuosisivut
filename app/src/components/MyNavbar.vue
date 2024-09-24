@@ -93,6 +93,7 @@ export default {
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 .navbar-desktop {
   background-color: #E3E1E5; /* Gray background */
