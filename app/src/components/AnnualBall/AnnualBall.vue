@@ -177,9 +177,9 @@
       <MiddleHeader :text1="$t('ball[0].sponsors0')" />
       <div class="event-info">
         <div class="sponsor-container">
-          <img class="sponsor-logo" src="@/assets/AnnualBall/sponsor1.svg" alt="star" />
+          <img class="sponsor-logo" src="@/assets/AnnualBall/sponsor1.png" alt="star" />
           <img class="sponsor-star" src="@/assets/AnnualBall/yellow_star.svg" alt="star" />
-          <img class="sponsor-logo" src="@/assets/AnnualBall/sponsor2.svg" alt="star" />
+          <img class="sponsor-logo" src="@/assets/AnnualBall/sponsor2.png" alt="star" />
         </div>
       </div>
     </div>
