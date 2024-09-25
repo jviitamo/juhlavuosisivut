@@ -46,8 +46,12 @@
             <td>{{ $t('ball[0].schedule3') }}</td>
           </tr>
           <tr>
-            <td class="time">18:00</td>
+            <td class="time">18:30</td>
             <td>{{ $t('ball[0].schedule4') }}</td>
+          </tr>
+          <tr>
+            <td class="time">23:15</td>
+            <td>{{ $t('ball[0].schedule41') }}</td>
           </tr>
           <tr>
             <td class="time">02:00</td>
@@ -74,13 +78,13 @@
           <div>
             <p class="event-info-header">{{ $t('ball[0].signup2') }}</p>
             <div>
-              <br><p>{{ $t('ball[0].signup3') }}</p><br><p>{{ $t('ball[0].signup4') }} {{ $t('ball[0].signup5') }}</p>
+              <br><p>{{ $t('ball[0].signup3') }}</p><br><a :href="$t('ball[0].signup5')">{{ $t('ball[0].signup4') }}</a>
             </div>
           </div>
           <div>
             <p class="event-info-header">{{ $t('ball[0].signup6') }}</p>
             <div>
-              <br><p>{{ $t('ball[0].signup7') }}</p><br><p>{{ $t('ball[0].signup8') }} {{ $t('ball[0].signup9') }}</p>
+              <br><p>{{ $t('ball[0].signup7') }}</p><br><a :href="$t('ball[0].signup9')">{{ $t('ball[0].signup8') }}</a>
             </div>
           </div>
         </div>
@@ -103,11 +107,17 @@
           <p>{{ $t('ball[0].dressing3') }}</p><br>
           <p>{{ $t('ball[0].dressing4') }}</p><br>
         </ListElement>
+        
+        <!-- 
+        
         <ListElement :title="$t('ball[0].sillis_dressing0')">
           <p class="side-by-side-content">{{ $t('ball[0].sillis_dressing1') }}</p>
           <p class="side-by-side-content gold-text">{{ $t('ball[0].sillis_dressing2') }}</p>
           <p class="side-by-side-content">{{ $t('ball[0].sillis_dressing3') }}</p>
-        </ListElement>
+        </ListElement> 
+        
+        -->
+        
         <ListElement :title="$t('ball[0].academic_medals0')">
           <p class="side-by-side-content">{{ $t('ball[0].academic_medals1') }}</p>
           <p class="side-by-side-content gold-text">{{ $t('ball[0].academic_medals2') }}</p>
