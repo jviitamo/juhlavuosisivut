@@ -138,13 +138,17 @@
           <div>
             <p class="event-info-header">{{ $t('ball[0].contact2') }}</p>
             <div>
-              <br><p>{{ $t('ball[0].contact3') }}</p>
+              <br>
+              <a class="side-by-side-content" href="https://t.me/ruusu" target="a_blank">{{ $t('ball[0].contact3') }}</a>
+              <p class="side-by-side-content">{{ $t('ball[0].contact31') }}</p>
             </div>
           </div>
           <div>
             <p class="event-info-header">{{ $t('ball[0].contact4') }}</p>
             <div>
-              <br><p>{{ $t('ball[0].contact5') }}</p>
+              <br>
+              <a class="side-by-side-content" href="https://t.me/ihamuma" target="a_blank">{{ $t('ball[0].contact5') }}</a>
+              <p class="side-by-side-content">{{ $t('ball[0].contact51') }}</p>
             </div>
           </div>
         </div>
