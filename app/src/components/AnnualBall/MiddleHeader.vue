@@ -1,5 +1,5 @@
 <template>
-    <div class="header-container">
+    <div class="header-container-ball">
       <p class="highlighted-text" v-if="this.text1">{{ (text1 + ' ' + text1).substring(0,10) }}</p>
       <div class="decorative-text-container">
         <div class="line-container left-line">
@@ -29,11 +29,8 @@
   </script>
   
   <style>
-  h1, h2, h4, h6, p {
-    margin: 0;
-  }
   
-  .header-container {
+  .header-container-ball {
     display: flex;
     flex-direction: column;
     align-items: center;

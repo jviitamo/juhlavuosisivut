@@ -218,7 +218,7 @@ h1, h2, h4, h6, p {
   margin: 0;
 }
 
-a {
+.hero-container a {
   color: white;
 }
 
@@ -271,17 +271,17 @@ a {
   align-items: center;
 }
 
-h1 {
+.hero-container h1 {
   font-size: 4rem;
   font-weight: 400;
   font-style: normal;
 }
 
-h2 {
+.hero-container h2 {
   font-size: 3rem;
 }
 
-h2, h6 {
+.hero-container h2, h6 {
   font-weight: 400;
   font-style: italic;
 }
@@ -368,10 +368,10 @@ tr {
     font-size: 1rem;
   }
 
-  h1 {
+  .hero-container h1 {
     font-size: 2rem;
   }
-  h2 {
+  .hero-container h2 {
     font-size: 1rem;
   }
 
