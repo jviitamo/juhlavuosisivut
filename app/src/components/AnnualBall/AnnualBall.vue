@@ -65,7 +65,7 @@
        <p class="event-info-header">{{ $t('ball[0].schedule7') }}</p>
        <table>
           <tr>
-            <td class="time">12:00</td>
+            <td class="time">12:00-18:00</td>
             <td>{{ $t('ball[0].schedule8') }}</td>
           </tr>
         </table>
