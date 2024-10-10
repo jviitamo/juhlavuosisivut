@@ -54,6 +54,7 @@
             </div>
             <div>         
                 <h2>{{ $t('event_headers[0].header_4') }}</h2>   
+                <p>{{ $t('event_headers[0].header_41') }}</p>   
                 <EventInformation
                     v-for="(message, key) in getEvents('events_3')" :key="key"
                     :text=message.text
