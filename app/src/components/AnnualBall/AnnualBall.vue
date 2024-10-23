@@ -190,14 +190,15 @@
       </div>
       <MiddleHeader :text1="$t('ball[0].sponsors0')" />
       <div class="event-info">
-        <div class="sponsor-container">
+        <div class="sponsor-container margin">
           <img class="sponsor-logo" src="@/assets/AnnualBall/sponsor1.png" alt="star" />
-          <img class="sponsor-star" src="@/assets/AnnualBall/yellow_star.svg" alt="star" />
           <img class="sponsor-logo" src="@/assets/AnnualBall/sponsor2.png" alt="star" />
         </div>
         <div class="sponsor-container">
-          <img class="sponsor-logo" src="@/assets/AnnualBall/ey-logo.png" alt="star" />
           <img class="sponsor-star" src="@/assets/AnnualBall/yellow_star.svg" alt="star" />
+        </div>
+        <div class="sponsor-container margin">
+          <img class="sponsor-logo" src="@/assets/AnnualBall/ey-logo.png" alt="star" />
           <img class="sponsor-logo" src="@/assets/AnnualBall/cgi-logo.png" alt="star" />
         </div>
       </div>
@@ -365,6 +366,9 @@ tr {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
+}
+
+.margin {
   margin-bottom: 3rem;
 }
 
