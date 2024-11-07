@@ -106,10 +106,10 @@
   ],
   "events_3": [
     {
-      "text": "Muusan läpilaulanta  - Athene XXV edition",
-      "information": "Jo perinteeksi muodostunut Athenen laulukirja Muusan läpilaulanta tekee jo toisen tulemisensa, kun vujuviikon maanantaina kilta kokoontuu mitä arwokkaimpaan juhlatilaisuuteen!🥸<br><br>Tapahtuma alkaa suurella Kiltanauhagaalalla, jossa aivan uusi killan tunnus näkee ensi kertaa päivänvalon - tätä et halua missata!<br><br>Tämän jälkeen siirrytään itse asiaan. Nimensä mukaisesti tapahtumassa lauletaan Muusa läpi; jos siis ikinä olet miettinyt, miten jokin laulu lauletaan, on tämä mitä parahultaisin tilaisuus oppia lisää athenelaisesta teekkarilaulukulttuurista! 🎶<br><br>Lisäbonuksena tapahtuman aikana päästään maistelemaan laulujen kohteina olevia asioita - kannattaakin siis tulla myös paikalle, kun suosikkijuomastasi lauletaan!😋",
+      "text": "Muusan läpilaulanta ja kiltanauhan julkaisu",
+      "information": "Jo perinteeksi muodostunut Athenen laulukirja Muusan läpilaulanta tekee jo toisen tulemisensa, kun vujuviikon maanantaina kilta kokoontuu mitä arwokkaimpaan juhlatilaisuuteen!🥸<br><br>Tapahtuma alkaa laulannalla, ja kuudelta tapahtuu suuri Kiltanauhagaala, jossa aivan uusi killan tunnus näkee ensi kertaa päivänvalon - tätä et halua missata!<br><br>Nimensä mukaisesti tapahtumassa lauletaan Muusa läpi; jos siis ikinä olet miettinyt, miten jokin laulu lauletaan, on tämä mitä parahultaisin tilaisuus oppia lisää athenelaisesta teekkarilaulukulttuurista! 🎶<br><br>Lisäbonuksena tapahtuman aikana päästään maistelemaan laulujen kohteina olevia asioita - kannattaakin siis tulla myös paikalle, kun suosikkijuomastasi lauletaan!😋",
       "date": "11.11.",
-      "time": "16:00-",
+      "time": "16:00-22:00",
       "location": "Pelimanni",
       "locationLink": "https://maps.app.goo.gl/vh8obeZGrdbwhPNfA"
     },
@@ -117,7 +117,7 @@
       "text": "Vujuviikon bileet Dionysia 🍷",
       "information": "🌿Tervetuloa Dionysiaan tiistaina 12.11.!🌿<br><br>25v juhlavuoden aikana ollaan inspiroiduttu antiikin Kreikasta muun muassa oliiviöljymaisteluiden ja temppeleiden muodossa. Juhlavuosi huipentuu luonnollisesti vuosijuhliin, joihin voi valmistautua osallistumalla erinäisiin juhlavuoden tapahtumiin jokaisena vujuviikon arkipäivänä.<br><br>Tiistaina päästään viettämään viinin ja päihtyneen hurmion jumala Dionysokselle omistettua juhlaa, joka antiikin Kreikassa tunnettiin nimellä Dionysia. 🍷 Tänä vuonna vujuviikon bileissä teemana on vanhojen hyvien aikojen humina. Juhla järjestetään Karhusaaren huvilalla kello 19 alkaen, ja luvassa on muun muassa seuraavaa: livemusiikkia, juomaa, pientä purtavaa, tanssia, ja hurmokasta athenelaista tunnelmaa! 🍾🎵💃 Bileisiin sopii pukeutua teemasta inspiroituen, kt. oheinen kuva. Lisätiedot ja ilmo seuraavat myöhemmin!",
       "date": "12.11.",
-      "time": "19:00-",
+      "time": "19:00-01:00",
       "location": "Karhusaaren huvila🏛",
       "imageName": "dionysia.jpeg",
       "locationLink": "https://maps.app.goo.gl/fabFswaxAjrRVoRq7"
@@ -150,7 +150,12 @@
     },
     {
       "text": "Purkusessio",
-      "date": "16.11."
+      "information": "Tervetuloa nauttimaan silliaamiaisesta!",
+      "date": "16.11.",
+      "time": "12:00-18:00",
+      "location": "Servin mökki",
+      "link": "https://xxv.athene.fi/fi/infoahky",
+      "locationLink": "https://g.co/kgs/JeeUd76"
     }
   ],
   "for_guild": [
