@@ -8,9 +8,26 @@
                 <h1>{{ $t('event_headers[0].header_1') }}</h1>
                 <p>{{ $t('event_headers[0].header_2') }}</p>
             </div>
-            <img src="@/assets/left.svg" alt="Logo" />
+            <img src="@/assets/left.svg" alt="event" />
         </div>
         <div class="event-information-container">
+            <div>         
+                <h1>{{ $t('event_headers[0].header_4') }}</h1>
+                <img class="card-image" src="@/assets/events/ball_events.svg" alt="Logo" />   
+                <p>{{ $t('event_headers[0].header_41') }}</p>   
+                <EventInformation
+                    v-for="(message, key) in getEvents('events_3')" :key="key"
+                    :text=message.text
+                    :information=message.information
+                    :location=message.location 
+                    :date=message.date
+                    :time=message.time
+                    :imageName=message.imageName
+                    :link=message.link
+                    :locationLink=message.locationLink
+                />
+            </div> 
+            <h1>Muut tapahtumat</h1>
             <div>
                 <EventInformation
                     v-for="(message, key) in getEvents('events_0')" :key="key"
@@ -51,22 +68,7 @@
                     :link=message.link
                     :locationLink=message.locationLink
                 />
-            </div>
-            <div>         
-                <h2>{{ $t('event_headers[0].header_4') }}</h2>   
-                <p>{{ $t('event_headers[0].header_41') }}</p>   
-                <EventInformation
-                    v-for="(message, key) in getEvents('events_3')" :key="key"
-                    :text=message.text
-                    :information=message.information
-                    :location=message.location 
-                    :date=message.date
-                    :time=message.time
-                    :imageName=message.imageName
-                    :link=message.link
-                    :locationLink=message.locationLink
-                />
-            </div>        
+            </div>       
         </div>
     </div>
   </template>
@@ -133,6 +135,10 @@
 
 .add-margin-top {
     margin-top: 100px;
+}
+
+.card-image {
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
