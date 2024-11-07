@@ -13,7 +13,8 @@
         <div class="event-information-container">
             <div>         
                 <h1>{{ $t('event_headers[0].header_4') }}</h1>
-                <img class="card-image" src="@/assets/events/ball_events.svg" alt="Logo" />   
+                <img class="card-image big-image" src="@/assets/events/ball_events.svg" alt="Logo" />   
+                <img class="card-image small-image" src="@/assets/events/ball_events_small.svg" alt="Logo" />   
                 <p>{{ $t('event_headers[0].header_41') }}</p>   
                 <EventInformation
                     v-for="(message, key) in getEvents('events_3')" :key="key"
@@ -27,7 +28,7 @@
                     :locationLink=message.locationLink
                 />
             </div> 
-            <h1>Muut tapahtumat</h1>
+            <h1>{{ $t('event_headers[0].header_6') }}</h1>
             <div>
                 <EventInformation
                     v-for="(message, key) in getEvents('events_0')" :key="key"
@@ -141,6 +142,10 @@
   width: 100%;
 }
 
+.small-image {
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
     .event-information-container {
         width: 90%;
@@ -158,6 +163,14 @@
     .main-heading-events > p {
         font-size: 1rem;
         font-weight: bold;
+    }
+
+    .small-image {
+        display: inline-block;
+    }
+
+    .big-image {
+        display: none;
     }
 }
   
