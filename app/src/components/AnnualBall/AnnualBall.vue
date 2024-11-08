@@ -201,6 +201,12 @@
           <img class="sponsor-logo" src="@/assets/AnnualBall/ey-logo.png" alt="star" />
           <img class="sponsor-logo" src="@/assets/AnnualBall/cgi-logo.png" alt="star" />
         </div>
+        <div class="sponsor-container">
+          <img class="sponsor-star" src="@/assets/AnnualBall/yellow_star.svg" alt="star" />
+        </div>
+        <div class="sponsor-container">
+          <img class="sponsor-logo" src="@/assets/AnnualBall/tter.png" alt="star" />
+        </div>
       </div>
     </div>
   </div>
