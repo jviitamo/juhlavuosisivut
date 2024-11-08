@@ -121,7 +121,7 @@
 }
 .card-image {
   max-width: 100%;
-  max-height: 300px; /* Set a reasonable max height for the image */
+  max-height: 200px; /* Set a reasonable max height for the image */
 }
 
 .first-information-container {
